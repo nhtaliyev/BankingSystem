@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\source\\repos\\bankingsystem\\bankingsystem.core\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\source\\repos\\bankingsystem\\bankingsystem.core\\enums\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\source\\repos\\bankingsystem\\bankingsystem.core\\enums\\transactionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\transactionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\source\\repos\\bankingsystem\\bankingsystem.core\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\source\\repos\\bankingsystem\\bankingsystem.core\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\source\\repos\\bankingsystem\\bankingsystem.core\\enums\\accountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\accountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\source\\repos\\bankingsystem\\bankingsystem.core\\enums\\cardstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\cardstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\source\\repos\\bankingsystem\\bankingsystem.core\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\source\\repos\\bankingsystem\\bankingsystem.core\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\source\\repos\\bankingsystem\\bankingsystem.core\\enums\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49DB2AFF-7F25-47EF-82FD-35274512B057}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CardStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Enums\\CardStatus.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\CardStatus.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Enums\\CardStatus.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Enums\\CardStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T16:57:54.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Enums\\TransactionType.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\TransactionType.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Enums\\TransactionType.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Enums\\TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T16:13:20.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\Transaction.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Models\\Transaction.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Models\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T09:23:35.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Models\\Card.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\Card.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Models\\Card.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Models\\Card.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T09:23:27.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Enums\\AccountStatus.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\AccountStatus.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Enums\\AccountStatus.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Enums\\AccountStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T09:22:17.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\Account.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Models\\Account.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Models\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T09:05:23.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransactionStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Enums\\TransactionStatus.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\TransactionStatus.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Enums\\TransactionStatus.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Enums\\TransactionStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T09:32:01.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Models\\BaseModel.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\BaseModel.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Models\\BaseModel.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Models\\BaseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T09:06:03.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Currency.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Enums\\Currency.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\Currency.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Enums\\Currency.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Enums\\Currency.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T19:32:38.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\source\\repos\\BankingSystem\\BankingSystem.Core\\Models\\AppUser.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T18:19:48.864Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

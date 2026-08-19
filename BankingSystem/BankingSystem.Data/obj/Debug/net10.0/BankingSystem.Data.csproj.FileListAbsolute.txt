@@ -1,0 +1,4 @@
+C:\Users\Lenovo\source\repos\BankingSystem\BankingSystem.Data\obj\Debug\net10.0\BankingSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\BankingSystem\BankingSystem.Data\obj\Debug\net10.0\BankingSystem.Data.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\BankingSystem\BankingSystem.Data\obj\Debug\net10.0\BankingSystem.Data.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\BankingSystem\BankingSystem.Data\obj\Debug\net10.0\BankingSystem.Data.csproj.CoreCompileInputs.cache
