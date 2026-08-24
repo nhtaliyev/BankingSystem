@@ -8,7 +8,6 @@ namespace BankingSystem.Core.Enums
     {
         Active,
         Blocked,
-        Expired,
-        Cancelled
+        Expired
     }
 }
