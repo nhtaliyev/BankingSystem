@@ -1,5 +1,6 @@
 ﻿using BankingSystem.Core.Repositories;
 using BankingSystem.Data.Repositories;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BankingSystem.Data

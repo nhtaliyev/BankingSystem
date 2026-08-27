@@ -8,11 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BankingSystem.Core\BankingSystem.Core.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.11" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configuration\" />
+    <ProjectReference Include="..\BankingSystem.Core\BankingSystem.Core.csproj" />
   </ItemGroup>
 
 </Project>

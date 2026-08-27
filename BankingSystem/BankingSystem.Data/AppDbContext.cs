@@ -1,4 +1,5 @@
 ﻿using BankingSystem.Core.Models;
+using BankingSystem.Data.Configuration;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
