@@ -11,4 +11,15 @@
     <ProjectReference Include="..\BankingSystem.Data\BankingSystem.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Mappings\" />
+    <Folder Include="ExternalServices\" />
+    <Folder Include="PaginatedLists\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.12" />
+  </ItemGroup>
+
 </Project>
