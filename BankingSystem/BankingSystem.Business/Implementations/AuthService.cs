@@ -199,6 +199,7 @@ namespace BankingSystem.Business.Implementations
 
             if (usedphone != null)
                 throw new ValidationException("This phone number is already used");
+            
 
             var result = await _userManager.CreateAsync(appUser, dto.Password);
 

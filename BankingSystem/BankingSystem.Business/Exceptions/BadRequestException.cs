@@ -1,20 +1,12 @@
-﻿namespace BankingSystem.Business.Exceptions
+﻿using Microsoft.AspNetCore.Http;
+
+namespace BankingSystem.Business.Exceptions
 {
-    public class BadRequestException : Exception
+    public class BadRequestException : AppException
     {
-        public string PropName { get; set; }
-
-        public BadRequestException()
+        public BadRequestException(string message) : base(message, StatusCodes.Status400BadRequest) 
         {
         }
 
-        public BadRequestException(string? message) : base(message)
-        {
-        }
-
-        public BadRequestException(string propname, string? message) : base(message)
-        {
-            PropName = propname;
-        }
     }
 }

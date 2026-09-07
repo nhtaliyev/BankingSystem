@@ -1,20 +1,12 @@
-﻿namespace BankingSystem.Business.Exceptions
+﻿using Microsoft.AspNetCore.Http;
+
+namespace BankingSystem.Business.Exceptions
 {
-    public class NotFoundException : Exception
+    public class NotFoundException : AppException
     {
-        public string PropName { get; set; }
-
-        public NotFoundException()
+        public NotFoundException(string message) : base(message, StatusCodes.Status404NotFound) 
         {
         }
 
-        public NotFoundException(string? message) : base(message)
-        {
-        }
-
-        public NotFoundException(string propname, string? message) : base(message)
-        {
-            PropName = propname;
-        }
     }
 }
