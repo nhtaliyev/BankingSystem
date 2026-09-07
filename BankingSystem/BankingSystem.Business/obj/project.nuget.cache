@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gqpCXSGp9Fg=",
+  "dgSpecHash": "Yh2VsODeQ6s=",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\BankingSystem.Business.csproj",
   "expectedPackageFiles": [
@@ -18,9 +18,9 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.3.11\\microsoft.aspnetcore.hosting.abstractions.2.3.11.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.3.10\\microsoft.aspnetcore.hosting.server.abstractions.2.3.10.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.http\\2.3.9\\microsoft.aspnetcore.http.2.3.9.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.10\\microsoft.aspnetcore.http.abstractions.2.3.10.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.12\\microsoft.aspnetcore.http.abstractions.2.3.12.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.3.9\\microsoft.aspnetcore.http.extensions.2.3.9.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.9\\microsoft.aspnetcore.http.features.2.3.9.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.11\\microsoft.aspnetcore.http.features.2.3.11.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.3.12\\microsoft.aspnetcore.identity.2.3.12.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.11\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.11.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.3.0\\microsoft.aspnetcore.webutilities.2.3.0.nupkg.sha512",

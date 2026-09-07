@@ -1,19 +1,19 @@
 ﻿using BankingSystem.Business.DTOs.TokenDtos;
 using BankingSystem.Business.DTOs.UserDTOs;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BankingSystem.Business.Interfaces
 {
     public interface IAuthService
     {
-        Task Register(UserRegisterDto dto);
-        Task<ICollection<UserGetDto>> GetAllUsersAsync();
-        Task<UserGetDto> GetById(string id);
-        Task UpdateUserAsync(string id, UserEditDto dto);
-        Task<TokenResponseDto> Login(UserLoginDto dto);
+        Task RegisterAsync(UserRegisterDto dto, CancellationToken cancellationToken = default);
+        Task<TokenResponseDto> LoginAsync(UserLoginDto dto, CancellationToken cancellationToken = default);
+        Task<TokenResponseDto> RefreshTokenAsync(RefreshTokenDto dto, CancellationToken cancellationToken = default);
+        Task LogoutAsync(string userId, CancellationToken cancellationToken = default);
 
-        //Task ForgotPassword(ForgotPasswordDto dto);
+        Task ChangePasswordAsync(string userId, ChangePasswordDto dto, CancellationToken cancellationToken = default);
+        Task ForgotPasswordAsync(ForgotPasswordDto dto, CancellationToken cancellationToken = default);
+        Task ResetPasswordAsync(ResetPasswordDto dto, CancellationToken cancellationToken = default);
+
+        Task ConfirmEmailAsync(ConfirmEmailDto dto, CancellationToken cancellationToken = default);
     }
 }

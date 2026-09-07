@@ -244,10 +244,10 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Abstractions/2.3.10": {
+      "Microsoft.AspNetCore.Http.Abstractions/2.3.12": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "2.3.9"
+          "Microsoft.AspNetCore.Http.Features": "2.3.11"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
@@ -278,7 +278,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Http.Features/2.3.9": {
+      "Microsoft.AspNetCore.Http.Features/2.3.11": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Primitives": "8.0.0"
@@ -1557,16 +1557,16 @@
         "microsoft.aspnetcore.http.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Http.Abstractions/2.3.10": {
-      "sha512": "FD6mE5v3qB/sEcnLNni1oHsATuLHIFzsKHCulUZS7iaJez8+TkD432L89DQtU9PfjCkaPO0JOQjB4tS4L8oZXQ==",
+    "Microsoft.AspNetCore.Http.Abstractions/2.3.12": {
+      "sha512": "Mc1UKKSU8PmOWqpNdfpRYmqotmoQlsL1SAYwLHIIlTDayjyKng3UVn5+b+mPAEp31vU4ozy0CYeRYvCPqzdxZw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.http.abstractions/2.3.10",
+      "path": "microsoft.aspnetcore.http.abstractions/2.3.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
-        "microsoft.aspnetcore.http.abstractions.2.3.10.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.2.3.12.nupkg.sha512",
         "microsoft.aspnetcore.http.abstractions.nuspec"
       ]
     },
@@ -1583,16 +1583,16 @@
         "microsoft.aspnetcore.http.extensions.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Http.Features/2.3.9": {
-      "sha512": "nDWDF0YBgElg6f0omqJ8DupmITQg5p4lklBxFpVR83tQQhOG2tw9Fa5ul8b+KywsYBsyfn9DschUmfzOV6RvGw==",
+    "Microsoft.AspNetCore.Http.Features/2.3.11": {
+      "sha512": "TRQWR0vHBUUAEynbgCI3/MRf4+xRj8TsljoUPYxqiombhYhoEYHnr1sowozU1L/OyJHkPdm2IscJ9JBa0kcgbw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.http.features/2.3.9",
+      "path": "microsoft.aspnetcore.http.features/2.3.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
-        "microsoft.aspnetcore.http.features.2.3.9.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.2.3.11.nupkg.sha512",
         "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
@@ -2974,6 +2974,7 @@
     "net10.0": [
       "BankingSystem.Data >= 1.0.0",
       "FluentValidation >= 12.1.1",
+      "Microsoft.AspNetCore.Http.Abstractions >= 2.3.12",
       "Microsoft.AspNetCore.Identity >= 2.3.12"
     ]
   },
@@ -3037,6 +3038,10 @@
           "FluentValidation": {
             "target": "Package",
             "version": "[12.1.1, )"
+          },
+          "Microsoft.AspNetCore.Http.Abstractions": {
+            "target": "Package",
+            "version": "[2.3.12, )"
           },
           "Microsoft.AspNetCore.Identity": {
             "target": "Package",
