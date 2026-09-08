@@ -1,4 +1,5 @@
-﻿using BankingSystem.Business.DTOs.TokenDtos;
+﻿using BankingSystem.Business.DTOs.AuthDTOs;
+using BankingSystem.Business.DTOs.TokenDtos;
 using BankingSystem.Business.DTOs.UserDTOs;
 
 namespace BankingSystem.Business.Interfaces
