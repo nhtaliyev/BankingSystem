@@ -1,6 +1,5 @@
 ﻿using BankingSystem.Business.DTOs.AuthDTOs;
 using BankingSystem.Business.DTOs.TokenDtos;
-using BankingSystem.Business.DTOs.UserDTOs;
 
 namespace BankingSystem.Business.Interfaces
 {
@@ -10,6 +9,7 @@ namespace BankingSystem.Business.Interfaces
         Task<TokenResponseDto> LoginAsync(UserLoginDto dto, CancellationToken cancellationToken = default);
         Task<TokenResponseDto> RefreshTokenAsync(RefreshTokenDto dto, CancellationToken cancellationToken = default);
         Task LogoutAsync(string userId, CancellationToken cancellationToken = default);
+
 
         Task ChangePasswordAsync(string userId, ChangePasswordDto dto, CancellationToken cancellationToken = default);
         Task ForgotPasswordAsync(ForgotPasswordDto dto, CancellationToken cancellationToken = default);

@@ -1,13 +1,15 @@
-﻿using BankingSystem.Business.DTOs.TokenDtos;
-using BankingSystem.Business.DTOs.UserDTOs;
+﻿using BankingSystem.Business.DTOs.AuthDTOs;
+using BankingSystem.Business.DTOs.TokenDtos;
+using BankingSystem.Business.Exceptions;
 using BankingSystem.Business.Interfaces;
 using BankingSystem.Core.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using System.ComponentModel.DataAnnotations;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace BankingSystem.Business.Implementations
@@ -25,196 +27,218 @@ namespace BankingSystem.Business.Implementations
             _configuration = configuration;
         }
 
-        public async Task<ICollection<UserGetDto>> GetAllUsersAsync()
+        public async Task RegisterAsync(UserRegisterDto dto, CancellationToken cancellationToken = default)
         {
-            var users = await _userManager.Users.ToListAsync();
+            if (dto.Birthday >= DateTime.Now)
+                throw new BusinessValidationException("Invalid birth date");
 
-            var userDtos = users.Select(user => new UserGetDto(
-                user.Id,
-                user.FullName,
-                user.Email,
-                user.PhoneNumber,
-                user.Birthday
-            )).ToList();
+            var usedEmail = await _userManager.FindByEmailAsync(dto.Email);
+            if (usedEmail != null)
+                throw new ConflictException("This email is already used");
 
-            return userDtos;
-        }
+            var usedPhone = await _userManager.Users
+                .FirstOrDefaultAsync(x => x.PhoneNumber == dto.PhoneNumber, cancellationToken);
+            if (usedPhone != null)
+                throw new ConflictException("This phone number is already used");
 
-        //public async Task<ICollection<UserGetDto>> GetAllAdminsAsync()
-        //{
-        //    var users = await _userManager.GetUsersInRoleAsync("Admin");
-
-        //    var userDtos = users.Select(user => new UserGetDto(
-        //        user.Id,
-        //        user.FullName,
-        //        user.Email,
-        //        user.PhoneNumber,
-        //        user.Status,
-        //        user.Birthday,
-        //        user.Gender
-        //    )).ToList();
-
-        //    return userDtos;
-        //}
-
-        public async Task UpdateUserAsync(string id, UserEditDto dto)
-        {
-            var user = await _userManager.FindByIdAsync(id);
-
-            if (user is null)
-            {
-                throw new NotFoundException($"User not found");
-            }
-
-            user.FullName = dto.FullName;
-            user.Email = dto.Email;
-            user.PhoneNumber = dto.PhoneNumber;
-            user.Status = dto.Status;
-            user.Birthday = dto.Birthday;
-            user.Gender = dto.Gender;
-
-            if (user.Birthday > DateTime.Now)
-            {
-                throw new Exceptions.InvalidDataException("Invalid Birthday");
-            }
-
-            var result = await _userManager.UpdateAsync(user);
-
-            if (!result.Succeeded)
-            {
-                throw new ValidationException($"Failed to update");
-            }
-        }
-
-        public async Task<UserGetDto> GetById(string id)
-        {
-            var user = await _userManager.Users.FirstOrDefaultAsync(u => u.Id == id.ToString());
-
-            if (user == null)
-            {
-                throw new NotFoundException($"User not found");
-            }
-
-            var userDto = new UserGetDto(
-                user.Id,
-                user.FullName,
-                user.Email,
-                user.PhoneNumber,
-                user.Status,
-                user.Birthday,
-                user.Gender
-            );
-
-            return userDto;
-        }
-
-        public async Task<TokenResponseDto> Login(UserLoginDto dto)
-        {
-            AppUser appUser = null;
-
-            appUser = await _userManager.FindByEmailAsync(dto.Email);
-
-            if (appUser == null)
-            {
-                throw new NotFoundException("Invalid credentials");
-            }
-
-            var result = await _signInManager.CheckPasswordSignInAsync(appUser, dto.Password, dto.RememberMe);
-
-            if (!result.Succeeded)
-            {
-                throw new UnauthorizedException("Invalid credentials");
-            }
-
-            //if (appUser.Status == AdminStatus.Pending || appUser.Status == AdminStatus.Rejected)
-            //{
-            //    throw new UnauthorizedException("you must be confirmed as an admin");
-            //}
-
-            //var roles = await _userManager.GetRolesAsync(appUser);
-
-            //if (!roles.Contains("Admin") && !roles.Contains("SuperAdmin"))
-            //{
-            //    throw new UnauthorizedException("You must be an admin to log in");
-            //}
-
-            List<Claim> claims = new List<Claim>()
-            {
-                new Claim(ClaimTypes.NameIdentifier, appUser.Id),
-                new Claim(ClaimTypes.Name, appUser.FullName),
-            };
-
-            if (roles.Contains("Admin"))
-            {
-                claims.Add(new Claim(ClaimTypes.Role, "Admin"));
-            }
-
-            if (roles.Contains("SuperAdmin"))
-            {
-                claims.Add(new Claim(ClaimTypes.Role, "SuperAdmin"));
-            }
-
-            claims.AddRange(roles.Select(x => new Claim(ClaimTypes.Role, x)));
-            DateTime expiredt = DateTime.UtcNow.AddHours(6);
-            string secretkey = _configuration.GetSection("JWT:secretKey").Value;
-
-            SymmetricSecurityKey symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretkey));
-            SigningCredentials signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
-
-            JwtSecurityToken jwtSecurityToken = new JwtSecurityToken(
-                signingCredentials: signingCredentials,
-                claims: claims,
-                audience: _configuration.GetSection("JWT:audience").Value,
-                issuer: _configuration.GetSection("JWT:issuer").Value,
-                expires: expiredt,
-                notBefore: DateTime.UtcNow
-                );
-
-            string token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
-
-            return new TokenResponseDto(token, expiredt);
-        }
-
-        public async Task Register(UserRegisterDto dto)
-        {
-            AppUser appUser = new AppUser()
+            var appUser = new AppUser
             {
                 Email = dto.Email,
                 Birthday = dto.Birthday,
-                Gender = dto.Gender,
                 FullName = dto.FullName,
                 PhoneNumber = dto.PhoneNumber,
                 UserName = dto.Email,
             };
 
-            if (appUser.Birthday >= DateTime.Now)
-                throw new Exceptions.InvalidDataException("Invalid Birth Date");
-
-            var usedemail = await _userManager.FindByEmailAsync(appUser.Email);
-
-            if (usedemail != null)
-                throw new ValidationException("This email is already used");
-
-            var usedphone = await _userManager.Users.FirstOrDefaultAsync(x => x.PhoneNumber == dto.PhoneNumber);
-
-            if (usedphone != null)
-                throw new ValidationException("This phone number is already used");
-            
-
             var result = await _userManager.CreateAsync(appUser, dto.Password);
-
             if (!result.Succeeded)
             {
-                throw new ValidationException("Something went wrong");
+                var errors = string.Join("; ", result.Errors.Select(e => e.Description));
+                throw new BusinessValidationException($"Registration failed: {errors}");
             }
 
-            var member = await _userManager.FindByEmailAsync(dto.Email);
+            await _userManager.AddToRoleAsync(appUser, "Customer");
+        }
 
-            if (member is not null)
+        public async Task<TokenResponseDto> LoginAsync(UserLoginDto dto, CancellationToken cancellationToken = default)
+        {
+            var appUser = await _userManager.FindByEmailAsync(dto.Email);
+            if (appUser == null)
+                throw new UnauthorizedException("Invalid credentials");
+
+            var result = await _signInManager.CheckPasswordSignInAsync(appUser, dto.Password, dto.RememberMe);
+            if (!result.Succeeded)
+                throw new UnauthorizedException("Invalid credentials");
+
+            var roles = await _userManager.GetRolesAsync(appUser);
+
+            var token = await GenerateTokenAsync(appUser, roles);
+
+            appUser.RefreshToken = token.RefreshToken;
+            appUser.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+            await _userManager.UpdateAsync(appUser);
+
+            return token;
+        }
+
+        public async Task<TokenResponseDto> RefreshTokenAsync(RefreshTokenDto dto, CancellationToken cancellationToken = default)
+        {
+            var principal = GetPrincipalFromExpiredToken(dto.AccessToken);
+            var userId = principal.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var appUser = await _userManager.FindByIdAsync(userId);
+            if (appUser == null
+                || appUser.RefreshToken != dto.RefreshToken
+                || appUser.RefreshTokenExpiryTime <= DateTime.UtcNow)
             {
-                await _userManager.AddToRoleAsync(appUser, "Admin");
+                throw new UnauthorizedException("Invalid or expired refresh token");
             }
 
+            var roles = await _userManager.GetRolesAsync(appUser);
+            var token = await GenerateTokenAsync(appUser, roles);
+
+            appUser.RefreshToken = token.RefreshToken;
+            appUser.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+            await _userManager.UpdateAsync(appUser);
+
+            return token;
+        }
+
+        public async Task LogoutAsync(string userId, CancellationToken cancellationToken = default)
+        {
+            var appUser = await _userManager.FindByIdAsync(userId);
+            if (appUser == null)
+                throw new NotFoundException("User not found");
+
+            appUser.RefreshToken = null;
+            appUser.RefreshTokenExpiryTime = null;
+            await _userManager.UpdateAsync(appUser);
+        }
+
+        public async Task ChangePasswordAsync(string userId, ChangePasswordDto dto, CancellationToken cancellationToken = default)
+        {
+            if (dto.NewPassword != dto.ConfirmNewPassword)
+                throw new BusinessValidationException("New password and confirmation do not match");
+
+            var appUser = await _userManager.FindByIdAsync(userId);
+            if (appUser == null)
+                throw new NotFoundException("User not found");
+
+            var result = await _userManager.ChangePasswordAsync(appUser, dto.CurrentPassword, dto.NewPassword);
+            if (!result.Succeeded)
+            {
+                var errors = string.Join("; ", result.Errors.Select(e => e.Description));
+                throw new BusinessValidationException($"Failed to change password: {errors}");
+            }
+        }
+
+        public async Task ForgotPasswordAsync(ForgotPasswordDto dto, CancellationToken cancellationToken = default)
+        {
+            var appUser = await _userManager.FindByEmailAsync(dto.Email);
+
+            // Do not throw NotFoundException here - it lets attackers enumerate
+            // which emails are registered. Silently no-op if the user doesn't exist.
+            if (appUser == null)
+                return;
+
+            var token = await _userManager.GeneratePasswordResetTokenAsync(appUser);
+
+            // TODO: send `token` via email/notification service (IEmailService, etc.)
+            // Do not return the token directly to the caller.
+        }
+
+        public async Task ResetPasswordAsync(ResetPasswordDto dto, CancellationToken cancellationToken = default)
+        {
+            if (dto.NewPassword != dto.ConfirmNewPassword)
+                throw new BusinessValidationException("New password and confirmation do not match");
+
+            var appUser = await _userManager.FindByEmailAsync(dto.Email);
+            if (appUser == null)
+                throw new UnauthorizedException("Invalid reset request");
+
+            var result = await _userManager.ResetPasswordAsync(appUser, dto.Token, dto.NewPassword);
+            if (!result.Succeeded)
+            {
+                var errors = string.Join("; ", result.Errors.Select(e => e.Description));
+                throw new BusinessValidationException($"Failed to reset password: {errors}");
+            }
+        }
+
+        public async Task ConfirmEmailAsync(ConfirmEmailDto dto, CancellationToken cancellationToken = default)
+        {
+            var appUser = await _userManager.FindByIdAsync(dto.UserId);
+            if (appUser == null)
+                throw new NotFoundException("User not found");
+
+            var result = await _userManager.ConfirmEmailAsync(appUser, dto.Token);
+            if (!result.Succeeded)
+                throw new BusinessValidationException("Failed to confirm email");
+        }
+
+        private async Task<TokenResponseDto> GenerateTokenAsync(AppUser appUser, IList<string> roles)
+        {
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, appUser.Id),
+                new Claim(ClaimTypes.Name, appUser.FullName),
+            };
+            claims.AddRange(roles.Select(r => new Claim(ClaimTypes.Role, r)));
+
+            var secretKey = _configuration["JWT:secretKey"]
+                ?? throw new InvalidOperationException("JWT:secretKey is not configured");
+
+            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
+            var signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
+
+            var expiredAt = DateTime.UtcNow.AddMinutes(30); // short-lived access token
+            var jwtSecurityToken = new JwtSecurityToken(
+                signingCredentials: signingCredentials,
+                claims: claims,
+                audience: _configuration["JWT:audience"],
+                issuer: _configuration["JWT:issuer"],
+                expires: expiredAt,
+                notBefore: DateTime.UtcNow
+            );
+
+            var accessToken = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
+            var refreshToken = GenerateRefreshToken();
+
+            return new TokenResponseDto(accessToken, expiredAt, refreshToken);
+        }
+
+        private static string GenerateRefreshToken()
+        {
+            var randomBytes = new byte[64];
+            RandomNumberGenerator.Fill(randomBytes);
+            return Convert.ToBase64String(randomBytes);
+        }
+
+        private ClaimsPrincipal GetPrincipalFromExpiredToken(string token)
+        {
+            var secretKey = _configuration["JWT:secretKey"]
+                ?? throw new InvalidOperationException("JWT:secretKey is not configured");
+
+            var validationParameters = new TokenValidationParameters
+            {
+                ValidateIssuer = true,
+                ValidIssuer = _configuration["JWT:issuer"],
+                ValidateAudience = true,
+                ValidAudience = _configuration["JWT:audience"],
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)),
+                ValidateLifetime = false // expired tokens are expected here
+            };
+
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var principal = tokenHandler.ValidateToken(token, validationParameters, out var securityToken);
+
+            if (securityToken is not JwtSecurityToken jwtSecurityToken ||
+                !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
+            {
+                throw new UnauthorizedException("Invalid token");
+            }
+
+            return principal;
         }
     }
 }

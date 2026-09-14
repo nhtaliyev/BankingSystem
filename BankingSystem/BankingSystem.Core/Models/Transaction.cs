@@ -6,9 +6,13 @@ namespace BankingSystem.Core.Models
 {
     public class Transaction : BaseModel
     {
+        public int? FromAccountId { get; set; }
+        public int? ToAccountId { get; set; }
+        public Account? FromAccount { get; set; }
+        public Account? ToAccount { get; set; }
+
         public int? FromCardId { get; set; }
         public int? ToCardId { get; set; }
-
         public Card? FromCard { get; set; }
         public Card? ToCard { get; set; }
 
@@ -17,5 +21,7 @@ namespace BankingSystem.Core.Models
 
         public TransactionType Type { get; set; }
         public TransactionStatus Status { get; set; }
+
+        public string? Description { get; set; }
     }
 }

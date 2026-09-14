@@ -1,4 +1,4 @@
 ﻿namespace BankingSystem.Business.DTOs.TokenDtos
 {
-    public record TokenResponseDto(string AccessToken, DateTime ExpireDate);
+    public record TokenResponseDto(string AccessToken, DateTime ExpireDate, string RefreshToken);
 }

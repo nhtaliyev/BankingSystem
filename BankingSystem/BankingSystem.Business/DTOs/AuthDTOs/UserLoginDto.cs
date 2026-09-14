@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace BankingSystem.Business.DTOs.UserDTOs
+namespace BankingSystem.Business.DTOs.AuthDTOs
 {
     public record UserLoginDto(string Email, string Password, bool RememberMe);
 

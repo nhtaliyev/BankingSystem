@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using BankingSystem.Business.Interfaces;
 
 namespace BankingSystem.Business.Implementations
 {
-    internal class UserService
+    public class UserService : IUserService
     {
     }
 }

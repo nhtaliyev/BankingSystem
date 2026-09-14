@@ -14,10 +14,6 @@ namespace BankingSystem.Data.Configuration
 
             builder.Property(u => u.Birthday)
                 .IsRequired();
-
-            //builder.HasMany(u => u.Accounts)
-            //    .WithOne(u => u.User)
-            //    .HasForeignKey(u => u.AppUserId);
         }
     }
 }

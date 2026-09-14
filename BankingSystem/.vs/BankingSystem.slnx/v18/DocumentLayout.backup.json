@@ -3,12 +3,140 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\userdtos\\usergetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\userdtos\\usergetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\userdtos\\usereditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\userdtos\\usereditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F392776-5493-485F-A291-2EF711F6E746}|BankingSystem.API\\BankingSystem.API.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F392776-5493-485F-A291-2EF711F6E746}|BankingSystem.API\\BankingSystem.API.csproj|solutionrelative:bankingsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F392776-5493-485F-A291-2EF711F6E746}|BankingSystem.API\\BankingSystem.API.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8F392776-5493-485F-A291-2EF711F6E746}|BankingSystem.API\\BankingSystem.API.csproj|solutionrelative:bankingsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\enums\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\enums\\transactionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\transactionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\enums\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\enums\\cardstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\cardstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\enums\\accountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\accountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\configuration\\transactionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\configuration\\transactionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\configuration\\cardconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\configuration\\cardconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\configuration\\appuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\configuration\\appuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\configuration\\accountconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\configuration\\accountconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\exceptions\\businessvalidationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\exceptions\\businessvalidationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\exceptions\\accountfrozenexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\exceptions\\accountfrozenexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\tokendtos\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\tokendtos\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\tokendtos\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\tokendtos\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\authdtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\authdtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\authdtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\authdtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\authdtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\authdtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\authdtos\\confirmemaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,14 +151,6 @@
       "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\authdtos\\forgotpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\authdtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\authdtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\interfaces\\icardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\interfaces\\icardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,20 +163,8 @@
       "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\implementations\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\tokendtos\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\tokendtos\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\tokendtos\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\tokendtos\\refreshtokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\paginatedlists\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\paginatedlists\\pagedresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\exceptions\\externalserviceexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +191,6 @@
       "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\exceptions\\accountclosedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\exceptions\\accountfrozenexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\exceptions\\accountfrozenexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\exceptions\\insufficientfundsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\exceptions\\insufficientfundsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -97,10 +201,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\exceptions\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\exceptions\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\exceptions\\forbiddenexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,34 +215,6 @@
       "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\userdtos\\usergetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\userdtos\\usergetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\userdtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\userdtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\userdtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\userdtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\dtos\\userdtos\\usereditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\dtos\\userdtos\\usereditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.business\\interfaces\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\interfaces\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -155,14 +227,6 @@
       "RelativeMoniker": "D:0:0:{5BCAE1A6-9086-EC0B-E3A7-FB86F96A9293}|BankingSystem.Business\\BankingSystem.Business.csproj|solutionrelative:bankingsystem.business\\implementations\\cardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F392776-5493-485F-A291-2EF711F6E746}|BankingSystem.API\\BankingSystem.API.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8F392776-5493-485F-A291-2EF711F6E746}|BankingSystem.API\\BankingSystem.API.csproj|solutionrelative:bankingsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F392776-5493-485F-A291-2EF711F6E746}|BankingSystem.API\\BankingSystem.API.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F392776-5493-485F-A291-2EF711F6E746}|BankingSystem.API\\BankingSystem.API.csproj|solutionrelative:bankingsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8F392776-5493-485F-A291-2EF711F6E746}|BankingSystem.API\\BankingSystem.API.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.api\\bankingsystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{8F392776-5493-485F-A291-2EF711F6E746}|BankingSystem.API\\BankingSystem.API.csproj|solutionrelative:bankingsystem.api\\bankingsystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -171,24 +235,8 @@
       "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\bankingsystem.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\configuration\\accountconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\configuration\\accountconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\configuration\\appuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\configuration\\appuserconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\bankingsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\bankingsystem.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\repositories\\cardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -197,34 +245,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\configuration\\transactionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\configuration\\transactionconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\configuration\\cardconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|solutionrelative:bankingsystem.data\\configuration\\cardconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\enums\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\transactiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\enums\\transactionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\transactionstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6F675BF4-E940-7185-FF3C-EBC9A9802A40}|BankingSystem.Data\\BankingSystem.Data.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.data\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -241,22 +261,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\repositories\\icardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\repositories\\icardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\repositories\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\enums\\accountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\accountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\enums\\cardstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\cardstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|c:\\users\\lenovo\\onedrive\\desktop\\bankingsystem\\bankingsystem\\bankingsystem.core\\enums\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08FE3920-9A62-8236-A169-C8F31DA3B168}|BankingSystem.Core\\BankingSystem.Core.csproj|solutionrelative:bankingsystem.core\\enums\\currency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -266,71 +270,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ConfirmEmailDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ConfirmEmailDto.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\AuthDTOs\\ConfirmEmailDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ConfirmEmailDto.cs",
-              "RelativeToolTip": "BankingSystem.Business\\DTOs\\AuthDTOs\\ConfirmEmailDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA/AAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.API\\Program.cs",
+              "RelativeDocumentMoniker": "BankingSystem.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.API\\Program.cs",
+              "RelativeToolTip": "BankingSystem.API\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwBQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-08T18:56:22.027Z",
+              "WhenOpened": "2026-09-01T15:49:12.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ResetPasswordDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ResetPasswordDto.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\AuthDTOs\\ResetPasswordDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ResetPasswordDto.cs",
-              "RelativeToolTip": "BankingSystem.Business\\DTOs\\AuthDTOs\\ResetPasswordDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABuAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\AppUser.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-08T18:51:16.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ForgotPasswordDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ForgotPasswordDto.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\AuthDTOs\\ForgotPasswordDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ForgotPasswordDto.cs",
-              "RelativeToolTip": "BankingSystem.Business\\DTOs\\AuthDTOs\\ForgotPasswordDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-08T18:50:42.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChangePasswordDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ChangePasswordDto.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\AuthDTOs\\ChangePasswordDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ChangePasswordDto.cs",
-              "RelativeToolTip": "BankingSystem.Business\\DTOs\\AuthDTOs\\ChangePasswordDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-08T18:42:02.803Z",
+              "WhenOpened": "2026-08-18T18:19:48.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Implementations\\UserService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\UserService.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Implementations\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T18:03:49.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\AuthService.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Implementations\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\AuthService.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Implementations\\AuthService.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAwwNIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T15:34:01.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "BankingSystem.Business\\Interfaces\\IAuthService.cs",
               "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Interfaces\\IAuthService.cs",
               "RelativeToolTip": "BankingSystem.Business\\Interfaces\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-03T15:33:49.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserEditDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\UserDTOs\\UserEditDto.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\UserDTOs\\UserEditDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\UserDTOs\\UserEditDto.cs",
+              "RelativeToolTip": "BankingSystem.Business\\DTOs\\UserDTOs\\UserEditDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T16:46:27.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserGetDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\UserDTOs\\UserGetDto.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\UserDTOs\\UserGetDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\UserDTOs\\UserGetDto.cs",
+              "RelativeToolTip": "BankingSystem.Business\\DTOs\\UserDTOs\\UserGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T16:46:14.685Z",
               "EditorCaption": ""
             },
             {
@@ -341,260 +371,258 @@
               "RelativeDocumentMoniker": "BankingSystem.Business\\Interfaces\\IUserService.cs",
               "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Interfaces\\IUserService.cs",
               "RelativeToolTip": "BankingSystem.Business\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAByAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-07T18:03:42.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TokenResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\TokenDtos\\TokenResponseDto.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\TokenDtos\\TokenResponseDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\TokenDtos\\TokenResponseDto.cs",
-              "RelativeToolTip": "BankingSystem.Business\\DTOs\\TokenDtos\\TokenResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T16:55:31.93Z",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.API\\appsettings.json",
+              "RelativeDocumentMoniker": "BankingSystem.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.API\\appsettings.json",
+              "RelativeToolTip": "BankingSystem.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-01T15:48:46.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\AccountService.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Implementations\\AccountService.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\AccountService.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Implementations\\AccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Data\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\ServiceRegistration.cs",
+              "RelativeToolTip": "BankingSystem.Data\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T15:33:30.019Z",
+              "WhenOpened": "2026-08-23T15:17:51.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IAccountService.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Interfaces\\IAccountService.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Interfaces\\IAccountService.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Interfaces\\IAccountService.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Interfaces\\IAccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\AppDbContext.cs",
+              "RelativeToolTip": "BankingSystem.Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T15:33:24.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ICardService.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Interfaces\\ICardService.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Interfaces\\ICardService.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Interfaces\\ICardService.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Interfaces\\ICardService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T15:34:33.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\UserService.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Implementations\\UserService.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\UserService.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Implementations\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T18:03:49.325Z",
+              "WhenOpened": "2026-08-23T12:44:44.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "RefreshTokenDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\TokenDtos\\RefreshTokenDto.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\TokenDtos\\RefreshTokenDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\TokenDtos\\RefreshTokenDto.cs",
-              "RelativeToolTip": "BankingSystem.Business\\DTOs\\TokenDtos\\RefreshTokenDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Data\\Repositories\\GenericRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "BankingSystem.Data\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwBkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T18:24:57.091Z",
+              "WhenOpened": "2026-08-23T12:43:02.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Repositories\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Repositories\\IGenericRepository.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Repositories\\IGenericRepository.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Repositories\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-23T12:39:24.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\AuthService.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Implementations\\AuthService.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\AuthService.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Implementations\\AuthService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwMkAAAAMAAAAAAAAAA==",
+              "Title": "TransactionType.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\TransactionType.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\TransactionType.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\TransactionType.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Enums\\TransactionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T15:34:01.133Z"
+              "WhenOpened": "2026-08-19T16:13:20.768Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "ExternalServiceException.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ExternalServiceException.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\ExternalServiceException.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ExternalServiceException.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\ExternalServiceException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA4AAAAAAAAAA==",
+              "Title": "TransactionStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\TransactionStatus.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\TransactionStatus.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\TransactionStatus.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Enums\\TransactionStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T17:27:15.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PagedResult.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\PaginatedLists\\PagedResult.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\PaginatedLists\\PagedResult.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\PaginatedLists\\PagedResult.cs",
-              "RelativeToolTip": "BankingSystem.Business\\PaginatedLists\\PagedResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T18:06:23.514Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DailyLimitExceededException.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\DailyLimitExceededException.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\DailyLimitExceededException.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\DailyLimitExceededException.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\DailyLimitExceededException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAB0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T17:24:14.028Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CurrencyMismatchException.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\CurrencyMismatchException.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\CurrencyMismatchException.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\CurrencyMismatchException.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\CurrencyMismatchException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T17:24:51.219Z"
+              "WhenOpened": "2026-08-19T09:32:01.361Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "ValidationException.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ValidationException.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\ValidationException.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ValidationException.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\ValidationException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABjAAAAAAAAAA==",
+              "Title": "Currency.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\Currency.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\Currency.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\Currency.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Enums\\Currency.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T17:25:25.839Z"
+              "WhenOpened": "2026-08-18T19:32:38.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CardStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\CardStatus.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\CardStatus.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\CardStatus.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Enums\\CardStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T16:57:54.986Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "InvalidTransactionException.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\InvalidTransactionException.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\InvalidTransactionException.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\InvalidTransactionException.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\InvalidTransactionException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Title": "AccountStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\AccountStatus.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\AccountStatus.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\AccountStatus.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Enums\\AccountStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T17:23:36.616Z"
+              "WhenOpened": "2026-08-19T09:22:17.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TransactionConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\TransactionConfiguration.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Data\\Configuration\\TransactionConfiguration.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\TransactionConfiguration.cs",
+              "RelativeToolTip": "BankingSystem.Data\\Configuration\\TransactionConfiguration.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-27T18:38:34.973Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "AccountClosedException.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\AccountClosedException.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\AccountClosedException.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\AccountClosedException.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\AccountClosedException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\Transaction.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\Transaction.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Models\\Transaction.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T17:22:55.939Z"
+              "WhenOpened": "2026-08-19T09:23:35.603Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "AccountFrozenException.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\AccountFrozenException.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\AccountFrozenException.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\AccountFrozenException.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\AccountFrozenException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Title": "CardConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\CardConfiguration.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Data\\Configuration\\CardConfiguration.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\CardConfiguration.cs",
+              "RelativeToolTip": "BankingSystem.Data\\Configuration\\CardConfiguration.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwBQAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T17:22:05.35Z"
+              "WhenOpened": "2026-08-27T18:38:25.478Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "InsufficientFundsException.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\InsufficientFundsException.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\InsufficientFundsException.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\InsufficientFundsException.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\InsufficientFundsException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABzAAAAAAAAAA==",
+              "Title": "AppUserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\AppUserConfiguration.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Data\\Configuration\\AppUserConfiguration.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\AppUserConfiguration.cs",
+              "RelativeToolTip": "BankingSystem.Data\\Configuration\\AppUserConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T17:21:05.207Z"
+              "WhenOpened": "2026-08-27T18:36:11.01Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "ConflictException.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ConflictException.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\ConflictException.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ConflictException.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\ConflictException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
+              "Title": "AccountConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\AccountConfiguration.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Data\\Configuration\\AccountConfiguration.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\AccountConfiguration.cs",
+              "RelativeToolTip": "BankingSystem.Data\\Configuration\\AccountConfiguration.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T17:19:47.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ForbiddenException.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ForbiddenException.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\ForbiddenException.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ForbiddenException.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\ForbiddenException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T17:16:58.248Z"
+              "WhenOpened": "2026-08-27T18:38:17.624Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "AppException.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\AppException.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\AppException.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\AppException.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\AppException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAABOAAAAAAAAAA==",
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\Account.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\Account.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Models\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T17:02:54.644Z"
+              "WhenOpened": "2026-08-19T09:05:23.403Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UnauthorizedException.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\UnauthorizedException.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\UnauthorizedException.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\UnauthorizedException.cs",
-              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\UnauthorizedException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABPAAAAAAAAAA==",
+              "DocumentIndex": 25,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\BaseModel.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\BaseModel.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\BaseModel.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Models\\BaseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T16:56:02.429Z"
+              "WhenOpened": "2026-08-19T09:06:03.797Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\Card.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\Card.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\Card.cs",
+              "RelativeToolTip": "BankingSystem.Core\\Models\\Card.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T09:23:27.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BusinessValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\BusinessValidationException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\BusinessValidationException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\BusinessValidationException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\BusinessValidationException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T15:29:03.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "BadRequestException.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\BadRequestException.cs",
               "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\BadRequestException.cs",
@@ -606,7 +634,295 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
+              "Title": "AccountFrozenException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\AccountFrozenException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\AccountFrozenException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\AccountFrozenException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\AccountFrozenException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T17:22:05.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TokenResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\TokenDtos\\TokenResponseDto.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\TokenDtos\\TokenResponseDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\TokenDtos\\TokenResponseDto.cs",
+              "RelativeToolTip": "BankingSystem.Business\\DTOs\\TokenDtos\\TokenResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T16:55:31.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RefreshTokenDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\TokenDtos\\RefreshTokenDto.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\TokenDtos\\RefreshTokenDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\TokenDtos\\RefreshTokenDto.cs",
+              "RelativeToolTip": "BankingSystem.Business\\DTOs\\TokenDtos\\RefreshTokenDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T18:24:57.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UserRegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\UserRegisterDto.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\AuthDTOs\\UserRegisterDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\UserRegisterDto.cs",
+              "RelativeToolTip": "BankingSystem.Business\\DTOs\\AuthDTOs\\UserRegisterDto.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBMAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T15:06:58.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UserLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\UserLoginDto.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\AuthDTOs\\UserLoginDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\UserLoginDto.cs",
+              "RelativeToolTip": "BankingSystem.Business\\DTOs\\AuthDTOs\\UserLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T15:06:16.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ChangePasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ChangePasswordDto.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\AuthDTOs\\ChangePasswordDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ChangePasswordDto.cs",
+              "RelativeToolTip": "BankingSystem.Business\\DTOs\\AuthDTOs\\ChangePasswordDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T18:42:02.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ForgotPasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ForgotPasswordDto.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\AuthDTOs\\ForgotPasswordDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ForgotPasswordDto.cs",
+              "RelativeToolTip": "BankingSystem.Business\\DTOs\\AuthDTOs\\ForgotPasswordDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T18:50:42.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ResetPasswordDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ResetPasswordDto.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\AuthDTOs\\ResetPasswordDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ResetPasswordDto.cs",
+              "RelativeToolTip": "BankingSystem.Business\\DTOs\\AuthDTOs\\ResetPasswordDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T18:51:16.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ConfirmEmailDto.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ConfirmEmailDto.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\AuthDTOs\\ConfirmEmailDto.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\AuthDTOs\\ConfirmEmailDto.cs",
+              "RelativeToolTip": "BankingSystem.Business\\DTOs\\AuthDTOs\\ConfirmEmailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T18:56:22.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\AccountService.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Implementations\\AccountService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\AccountService.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Implementations\\AccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T15:33:30.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IAccountService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Interfaces\\IAccountService.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Interfaces\\IAccountService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Interfaces\\IAccountService.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Interfaces\\IAccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T15:33:24.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ICardService.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Interfaces\\ICardService.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Interfaces\\ICardService.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Interfaces\\ICardService.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Interfaces\\ICardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T15:34:33.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ExternalServiceException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ExternalServiceException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\ExternalServiceException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ExternalServiceException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\ExternalServiceException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T17:27:15.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PagedResult.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\PaginatedLists\\PagedResult.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\PaginatedLists\\PagedResult.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\PaginatedLists\\PagedResult.cs",
+              "RelativeToolTip": "BankingSystem.Business\\PaginatedLists\\PagedResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T18:06:23.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DailyLimitExceededException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\DailyLimitExceededException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\DailyLimitExceededException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\DailyLimitExceededException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\DailyLimitExceededException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAB0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T17:24:14.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CurrencyMismatchException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\CurrencyMismatchException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\CurrencyMismatchException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\CurrencyMismatchException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\CurrencyMismatchException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T17:24:51.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ValidationException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\ValidationException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ValidationException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\ValidationException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T17:25:25.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "InvalidTransactionException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\InvalidTransactionException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\InvalidTransactionException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\InvalidTransactionException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\InvalidTransactionException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T17:23:36.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "AccountClosedException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\AccountClosedException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\AccountClosedException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\AccountClosedException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\AccountClosedException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T17:22:55.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "InsufficientFundsException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\InsufficientFundsException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\InsufficientFundsException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\InsufficientFundsException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\InsufficientFundsException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T17:21:05.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ConflictException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ConflictException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\ConflictException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ConflictException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\ConflictException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T17:19:47.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ForbiddenException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ForbiddenException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\ForbiddenException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\ForbiddenException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\ForbiddenException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T17:16:58.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AppException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\AppException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\AppException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\AppException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\AppException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T17:02:54.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "UnauthorizedException.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\UnauthorizedException.cs",
+              "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\UnauthorizedException.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\UnauthorizedException.cs",
+              "RelativeToolTip": "BankingSystem.Business\\Exceptions\\UnauthorizedException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-07T16:56:02.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Exceptions\\NotFoundException.cs",
               "RelativeDocumentMoniker": "BankingSystem.Business\\Exceptions\\NotFoundException.cs",
@@ -618,79 +934,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "UserGetDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\UserDTOs\\UserGetDto.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\UserDTOs\\UserGetDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\UserDTOs\\UserGetDto.cs",
-              "RelativeToolTip": "BankingSystem.Business\\DTOs\\UserDTOs\\UserGetDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T16:46:14.685Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "UserLoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\UserDTOs\\UserLoginDto.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\UserDTOs\\UserLoginDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\UserDTOs\\UserLoginDto.cs",
-              "RelativeToolTip": "BankingSystem.Business\\DTOs\\UserDTOs\\UserLoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T16:46:45.609Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UserRegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\UserDTOs\\UserRegisterDto.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\UserDTOs\\UserRegisterDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\UserDTOs\\UserRegisterDto.cs",
-              "RelativeToolTip": "BankingSystem.Business\\DTOs\\UserDTOs\\UserRegisterDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAiwBwAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T16:46:59.055Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\Account.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\Account.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\Account.cs",
-              "RelativeToolTip": "BankingSystem.Core\\Models\\Account.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T09:05:23.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\AppUser.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\AppUser.cs",
-              "RelativeToolTip": "BankingSystem.Core\\Models\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T18:19:48.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "UserEditDto.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\UserDTOs\\UserEditDto.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Business\\DTOs\\UserDTOs\\UserEditDto.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\DTOs\\UserDTOs\\UserEditDto.cs",
-              "RelativeToolTip": "BankingSystem.Business\\DTOs\\UserDTOs\\UserEditDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-03T16:46:27.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 53,
               "Title": "ITransactionService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Interfaces\\ITransactionService.cs",
               "RelativeDocumentMoniker": "BankingSystem.Business\\Interfaces\\ITransactionService.cs",
@@ -702,7 +946,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 54,
               "Title": "TransactionService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\TransactionService.cs",
               "RelativeDocumentMoniker": "BankingSystem.Business\\Implementations\\TransactionService.cs",
@@ -714,7 +958,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 55,
               "Title": "CardService.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Business\\Implementations\\CardService.cs",
               "RelativeDocumentMoniker": "BankingSystem.Business\\Implementations\\CardService.cs",
@@ -726,43 +970,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Data\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\ServiceRegistration.cs",
-              "RelativeToolTip": "BankingSystem.Data\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-23T15:17:51.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.API\\Program.cs",
-              "RelativeDocumentMoniker": "BankingSystem.API\\Program.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.API\\Program.cs",
-              "RelativeToolTip": "BankingSystem.API\\Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAmwDMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T15:49:12.26Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.API\\appsettings.json",
-              "RelativeDocumentMoniker": "BankingSystem.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.API\\appsettings.json",
-              "RelativeToolTip": "BankingSystem.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-01T15:48:46.05Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 56,
               "Title": "BankingSystem.API.csproj",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.API\\BankingSystem.API.csproj",
               "RelativeDocumentMoniker": "BankingSystem.API\\BankingSystem.API.csproj",
@@ -774,7 +982,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 57,
               "Title": "BankingSystem.Data.csproj",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\BankingSystem.Data.csproj",
               "RelativeDocumentMoniker": "BankingSystem.Data\\BankingSystem.Data.csproj",
@@ -786,55 +994,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\AppDbContext.cs",
-              "RelativeToolTip": "BankingSystem.Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-23T12:44:44.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "AccountConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\AccountConfiguration.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Data\\Configuration\\AccountConfiguration.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\AccountConfiguration.cs",
-              "RelativeToolTip": "BankingSystem.Data\\Configuration\\AccountConfiguration.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBIAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T18:38:17.624Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "AppUserConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\AppUserConfiguration.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Data\\Configuration\\AppUserConfiguration.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\AppUserConfiguration.cs",
-              "RelativeToolTip": "BankingSystem.Data\\Configuration\\AppUserConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T18:36:11.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Repositories\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Data\\Repositories\\GenericRepository.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Repositories\\GenericRepository.cs",
-              "RelativeToolTip": "BankingSystem.Data\\Repositories\\GenericRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowBAAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-23T12:43:02.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 60,
               "Title": "TransactionRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Repositories\\TransactionRepository.cs",
               "RelativeDocumentMoniker": "BankingSystem.Data\\Repositories\\TransactionRepository.cs",
@@ -846,7 +1006,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 58,
               "Title": "BankingSystem.Core.csproj",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\BankingSystem.Core.csproj",
               "RelativeDocumentMoniker": "BankingSystem.Core\\BankingSystem.Core.csproj",
@@ -858,7 +1018,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 59,
               "Title": "CardRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Repositories\\CardRepository.cs",
               "RelativeDocumentMoniker": "BankingSystem.Data\\Repositories\\CardRepository.cs",
@@ -870,91 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "TransactionConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\TransactionConfiguration.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Data\\Configuration\\TransactionConfiguration.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\TransactionConfiguration.cs",
-              "RelativeToolTip": "BankingSystem.Data\\Configuration\\TransactionConfiguration.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBYAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T18:38:34.973Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\Transaction.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\Transaction.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\Transaction.cs",
-              "RelativeToolTip": "BankingSystem.Core\\Models\\Transaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T09:23:35.603Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "CardConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\CardConfiguration.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Data\\Configuration\\CardConfiguration.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Configuration\\CardConfiguration.cs",
-              "RelativeToolTip": "BankingSystem.Data\\Configuration\\CardConfiguration.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAiwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-27T18:38:25.478Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "Card.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\Card.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\Card.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\Card.cs",
-              "RelativeToolTip": "BankingSystem.Core\\Models\\Card.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T09:23:27.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "TransactionType.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\TransactionType.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\TransactionType.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\TransactionType.cs",
-              "RelativeToolTip": "BankingSystem.Core\\Enums\\TransactionType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T16:13:20.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "BaseModel.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\BaseModel.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Core\\Models\\BaseModel.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Models\\BaseModel.cs",
-              "RelativeToolTip": "BankingSystem.Core\\Models\\BaseModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T09:06:03.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "TransactionStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\TransactionStatus.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\TransactionStatus.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\TransactionStatus.cs",
-              "RelativeToolTip": "BankingSystem.Core\\Enums\\TransactionStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T09:32:01.361Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 61,
               "Title": "AccountRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Data\\Repositories\\AccountRepository.cs",
               "RelativeDocumentMoniker": "BankingSystem.Data\\Repositories\\AccountRepository.cs",
@@ -966,7 +1042,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 62,
               "Title": "ITransactionRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Repositories\\ITransactionRepository.cs",
               "RelativeDocumentMoniker": "BankingSystem.Core\\Repositories\\ITransactionRepository.cs",
@@ -978,7 +1054,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 64,
               "Title": "ICardRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Repositories\\ICardRepository.cs",
               "RelativeDocumentMoniker": "BankingSystem.Core\\Repositories\\ICardRepository.cs",
@@ -990,7 +1066,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 63,
               "Title": "IAccountRepository.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Repositories\\IAccountRepository.cs",
               "RelativeDocumentMoniker": "BankingSystem.Core\\Repositories\\IAccountRepository.cs",
@@ -999,54 +1075,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-23T12:40:32.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Repositories\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Core\\Repositories\\IGenericRepository.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Repositories\\IGenericRepository.cs",
-              "RelativeToolTip": "BankingSystem.Core\\Repositories\\IGenericRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-23T12:39:24.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "Currency.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\Currency.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\Currency.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\Currency.cs",
-              "RelativeToolTip": "BankingSystem.Core\\Enums\\Currency.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T19:32:38.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "CardStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\CardStatus.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\CardStatus.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\CardStatus.cs",
-              "RelativeToolTip": "BankingSystem.Core\\Enums\\CardStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T16:57:54.986Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "AccountStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\AccountStatus.cs",
-              "RelativeDocumentMoniker": "BankingSystem.Core\\Enums\\AccountStatus.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Desktop\\BankingSystem\\BankingSystem\\BankingSystem.Core\\Enums\\AccountStatus.cs",
-              "RelativeToolTip": "BankingSystem.Core\\Enums\\AccountStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T09:22:17.114Z"
             }
           ]
         }

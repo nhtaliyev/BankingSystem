@@ -8,29 +8,37 @@ namespace BankingSystem.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<Card> builder)
         {
-            builder.Property(c => c.CardNumber)
-                .IsRequired()
-                .HasMaxLength(16);
+            builder.Property(c => c.CardNumberLast4)
+                .HasMaxLength(4)
+                .IsFixedLength()
+                .IsRequired();
 
-            builder.HasIndex(c => c.CardNumber)
+            builder.Property(c => c.CardNumberHash)
+                .HasMaxLength(64) // hex-encoded SHA256/HMAC-SHA256 output = 64 chars
+                .IsRequired();
+
+            builder.Property(c => c.CardNumberEncrypted)
+                .HasMaxLength(256) // AES output is longer than the raw input; give it room
+                .IsRequired();
+
+            builder.HasIndex(c => c.CardNumberHash)
                 .IsUnique();
 
-            builder.Property(c => c.ExpiryDate)
-                .IsRequired();
-
-            builder.Property(c => c.Status)
-                .IsRequired();
-
             builder.Property(c => c.Balance)
-                .HasPrecision(18, 2);
+                .HasColumnType("decimal(18,2)");
 
             builder.Property(c => c.DailyLimit)
-                .HasPrecision(18, 2);
+                .HasColumnType("decimal(18,2)");
+
+            builder.Property(c => c.Status)
+                .HasConversion<string>()
+                .HasMaxLength(20)
+                .IsRequired();
 
             builder.HasOne(c => c.Account)
                 .WithMany(a => a.Cards)
                 .HasForeignKey(c => c.AccountId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

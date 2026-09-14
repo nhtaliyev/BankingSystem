@@ -9,30 +9,29 @@ namespace BankingSystem.Data.Configuration
         public void Configure(EntityTypeBuilder<Account> builder)
         {
             builder.Property(a => a.AccountNumber)
-            .IsRequired()
-            .HasMaxLength(20);
+                .HasMaxLength(20)
+                .IsRequired();
 
             builder.HasIndex(a => a.AccountNumber)
                 .IsUnique();
 
+            builder.Property(a => a.Balance)
+                .HasColumnType("decimal(18,2)");
+
             builder.Property(a => a.Currency)
+                .HasConversion<string>()
+                .HasMaxLength(3)
                 .IsRequired();
 
             builder.Property(a => a.Status)
-                .IsRequired();
-
-            builder.Property(a => a.AppUserId)
+                .HasConversion<string>()
+                .HasMaxLength(20)
                 .IsRequired();
 
             builder.HasOne(a => a.User)
-                .WithMany(u => u.Accounts)
+                .WithMany() // add AppUser.Accounts collection later if you need it
                 .HasForeignKey(a => a.AppUserId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-            builder.HasMany(a => a.Cards)
-                .WithOne(c => c.Account)
-                .HasForeignKey(c => c.AccountId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

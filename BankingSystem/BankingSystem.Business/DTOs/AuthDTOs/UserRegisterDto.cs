@@ -1,9 +1,6 @@
 ﻿using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace BankingSystem.Business.DTOs.UserDTOs
+namespace BankingSystem.Business.DTOs.AuthDTOs
 {
     public record UserRegisterDto(string FullName, string Email, string Password, string ConfirmPassword,
                     string PhoneNumber, DateTime Birthday);
