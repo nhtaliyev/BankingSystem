@@ -12,8 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="DTOs\CardDTOs\" />
+    <Folder Include="DTOs\AccountDTOs\" />
+    <Folder Include="DTOs\TransactionDTOs\" />
     <Folder Include="Mappings\" />
-    <Folder Include="ExternalServices\" />
   </ItemGroup>
 
   <ItemGroup>
