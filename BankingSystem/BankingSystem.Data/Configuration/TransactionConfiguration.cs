@@ -50,7 +50,7 @@ namespace BankingSystem.Data.Configuration
                 .OnDelete(DeleteBehavior.Restrict);
 
             // Defense-in-depth: DB-level guarantee that a side never references both an account and a card.
-            // Primary enforcement should still happen in TransactionService before SaveChangesAsync.
+            // Primary enforcement should still happen in TransactionService before CommitAsync.
             builder.ToTable(tb => tb.HasCheckConstraint(
                 "CK_Transaction_FromSide",
                 "(\"FromAccountId\" IS NULL OR \"FromCardId\" IS NULL)"));

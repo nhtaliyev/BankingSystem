@@ -12,13 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\CardDTOs\" />
     <Folder Include="DTOs\AccountDTOs\" />
-    <Folder Include="DTOs\TransactionDTOs\" />
     <Folder Include="Mappings\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.2.0" />
     <PackageReference Include="FluentValidation" Version="12.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.12" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.12" />

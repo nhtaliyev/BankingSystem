@@ -4,6 +4,7 @@
     {
         Active,
         Blocked,
-        Closed
+        Closed,
+        Frozen
     }
 }
