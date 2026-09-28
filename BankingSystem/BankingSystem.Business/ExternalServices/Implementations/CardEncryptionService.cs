@@ -23,6 +23,7 @@ namespace BankingSystem.Business.ExternalServices.Implementations
 
             if (_encryptionKey.Length != 32)
                 throw new InvalidOperationException("Card encryption key must be 32 bytes (AES-256).");
+            
         }
 
         public (string Last4, string Hash, string Encrypted) GenerateCardNumber()
