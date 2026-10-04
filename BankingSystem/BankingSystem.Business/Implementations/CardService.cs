@@ -7,6 +7,7 @@ using BankingSystem.Core.Enums;
 using BankingSystem.Core.Models;
 using BankingSystem.Core.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client.NativeInterop;
 
 namespace BankingSystem.Business.Implementations
 {
@@ -43,6 +44,8 @@ namespace BankingSystem.Business.Implementations
             card.ExpiryDate = DateTime.UtcNow.AddYears(4);
             card.Status = CardStatus.Active;
             card.Balance = 0m;
+            account.CreatedTime = DateTime.UtcNow;
+            account.UpdatedTime = DateTime.UtcNow;
 
             await _cardRepository.AddAsync(card, cancellationToken);
             await _cardRepository.CommitAsync(cancellationToken);
@@ -73,6 +76,8 @@ namespace BankingSystem.Business.Implementations
                 ?? throw new NotFoundException($"Card with id '{id}' was not found.");
 
             EnsureNotClosed(card);
+
+            card.UpdatedTime = DateTime.UtcNow;
 
             _mapper.Map(dto, card);
 
@@ -105,6 +110,7 @@ namespace BankingSystem.Business.Implementations
                 throw new ConflictException($"Card with id '{id}' is already frozen.");
 
             card.Status = CardStatus.Frozen;
+            card.UpdatedTime = DateTime.UtcNow;
             await _cardRepository.CommitAsync(cancellationToken);
         }
 
@@ -119,6 +125,7 @@ namespace BankingSystem.Business.Implementations
                 throw new BusinessValidationException($"Card with id '{id}' is not frozen (current status: {card.Status}).");
 
             card.Status = CardStatus.Active;
+            card.UpdatedTime = DateTime.UtcNow;
             await _cardRepository.CommitAsync(cancellationToken);
         }
 
@@ -136,6 +143,7 @@ namespace BankingSystem.Business.Implementations
                 throw new ConflictException($"Card with id '{id}' is already blocked.");
 
             card.Status = CardStatus.Blocked;
+            card.UpdatedTime = DateTime.UtcNow;
             await _cardRepository.CommitAsync(cancellationToken);
         }
 
@@ -150,6 +158,7 @@ namespace BankingSystem.Business.Implementations
                 throw new BusinessValidationException($"Card with id '{id}' is not blocked (current status: {card.Status}).");
 
             card.Status = CardStatus.Active;
+            card.UpdatedTime = DateTime.UtcNow;
             await _cardRepository.CommitAsync(cancellationToken);
         }
 
@@ -165,6 +174,7 @@ namespace BankingSystem.Business.Implementations
                 throw new BusinessValidationException("Card must have a zero balance before it can be closed.");
 
             card.Status = CardStatus.Closed;
+            card.UpdatedTime = DateTime.UtcNow;
             await _cardRepository.CommitAsync(cancellationToken);
         }
 

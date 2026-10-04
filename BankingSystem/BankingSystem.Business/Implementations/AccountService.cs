@@ -27,6 +27,8 @@ namespace BankingSystem.Business.Implementations
             account.AccountNumber = await GenerateUniqueAccountNumberAsync(cancellationToken);
             account.Balance = 0m;
             account.Status = AccountStatus.Active;
+            account.CreatedTime = DateTime.UtcNow;
+            account.UpdatedTime = DateTime.UtcNow;
 
             await _accountRepository.AddAsync(account, cancellationToken);
             await _accountRepository.CommitAsync(cancellationToken);
@@ -64,6 +66,7 @@ namespace BankingSystem.Business.Implementations
                 throw new ConflictException($"Account with id '{id}' is already frozen.");
 
             account.Status = AccountStatus.Frozen;
+            account.UpdatedTime = DateTime.UtcNow;
             await CommitAsync(id, cancellationToken);
         }
 
@@ -77,6 +80,7 @@ namespace BankingSystem.Business.Implementations
                 throw new BusinessValidationException($"Account with id '{id}' is not frozen (current status: {account.Status}).");
 
             account.Status = AccountStatus.Active;
+            account.UpdatedTime = DateTime.UtcNow;
             await CommitAsync(id, cancellationToken);
         }
 
@@ -90,6 +94,7 @@ namespace BankingSystem.Business.Implementations
                 throw new ConflictException($"Account with id '{id}' is already blocked.");
 
             account.Status = AccountStatus.Blocked;
+            account.UpdatedTime = DateTime.UtcNow;
             await CommitAsync(id, cancellationToken);
         }
 
@@ -103,6 +108,7 @@ namespace BankingSystem.Business.Implementations
                 throw new BusinessValidationException($"Account with id '{id}' is not blocked (current status: {account.Status}).");
 
             account.Status = AccountStatus.Active;
+            account.UpdatedTime = DateTime.UtcNow;
             await CommitAsync(id, cancellationToken);
         }
 
@@ -123,6 +129,7 @@ namespace BankingSystem.Business.Implementations
                 throw new BusinessValidationException("All cards on this account must be closed before the account can be closed.");
 
             account.Status = AccountStatus.Closed;
+            account.UpdatedTime = DateTime.UtcNow;
             await CommitAsync(id, cancellationToken);
         }
 
