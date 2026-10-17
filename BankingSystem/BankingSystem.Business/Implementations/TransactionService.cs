@@ -5,6 +5,7 @@ using BankingSystem.Core.Enums;
 using BankingSystem.Core.Models;
 using BankingSystem.Core.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System.Linq.Expressions;
 
 namespace BankingSystem.Business.Implementations;
@@ -15,17 +16,19 @@ public class TransactionService : ITransactionService
     private readonly IGenericRepository<Account> _accounts;
     private readonly IGenericRepository<Card> _cards;
     private readonly IMapper _mapper;
+    private readonly ILogger<TransactionService> _logger;
 
     public TransactionService(
         IGenericRepository<Transaction> transactions,
         IGenericRepository<Account> accounts,
         IGenericRepository<Card> cards,
-        IMapper mapper)
+        IMapper mapper, ILogger<TransactionService> logger)
     {
         _transactions = transactions;
         _accounts = accounts;
         _cards = cards;
         _mapper = mapper;
+        _logger = logger;
     }
 
     public async Task<TransactionGetDto> TransferAsync(string appUserId, TransactionCreateDto dto, CancellationToken ct = default)
