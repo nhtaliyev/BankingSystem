@@ -1,0 +1,19 @@
+﻿using FluentValidation;
+using System.ComponentModel.DataAnnotations;
+
+namespace BankingSystem.Business.DTOs.CardDTOs
+{
+    public record CardCreateDto(int AccountId, decimal DailyLimit);
+
+    public class CardCreateDtoValidator : AbstractValidator<CardCreateDto>
+    {
+        public CardCreateDtoValidator()
+        {
+            RuleFor(x => x.AccountId).GreaterThan(0);
+            RuleFor(x => x.DailyLimit)
+                .GreaterThan(0)
+                .LessThanOrEqualTo(10_000m)
+                .PrecisionScale(18, 2, true);
+        }
+    }
+}
