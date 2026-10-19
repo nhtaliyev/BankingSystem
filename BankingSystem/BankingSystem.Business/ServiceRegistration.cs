@@ -1,4 +1,5 @@
-﻿using BankingSystem.Business.Implementations;
+﻿using BankingSystem.API.Services;
+using BankingSystem.Business.Implementations;
 using BankingSystem.Business.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,6 +14,7 @@ namespace BankingSystem.Business
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IAccountService, AccountService>();
             services.AddScoped<ICardService, CardService>();
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
         }
     }
 }

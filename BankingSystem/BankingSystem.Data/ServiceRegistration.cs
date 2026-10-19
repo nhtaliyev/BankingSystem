@@ -9,6 +9,8 @@ namespace BankingSystem.Data
     {
         public static void AddRepositories(this IServiceCollection services, string connectionstring)
         {
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<ICardRepository, CardRepository>();
             services.AddScoped<ITransactionRepository, TransactionRepository>();

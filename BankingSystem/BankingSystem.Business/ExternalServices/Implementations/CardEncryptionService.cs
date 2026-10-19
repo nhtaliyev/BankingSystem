@@ -18,8 +18,6 @@ namespace BankingSystem.Business.ExternalServices.Implementations
         private const int MinHashKeySize = 32;
         private const int EncryptionKeySize = 32; // AES-256
 
-        // Issuer prefix of generated numbers. Leading digit 9 is not used by the big card networks,
-        // so generated numbers can't accidentally match a real Visa/Mastercard range.
         private const string IssuerPrefix = "9999";
         private const int CardNumberLength = 16;
 
@@ -68,20 +66,14 @@ namespace BankingSystem.Business.ExternalServices.Implementations
             }
             catch (FormatException)
             {
-                // A corrupt stored hash simply doesn't match.
                 return false;
             }
 
             var computedBytes = ComputeHashBytes(cardNumber);
 
-            // Constant-time comparison (also returns false if the lengths differ).
             return CryptographicOperations.FixedTimeEquals(computedBytes, storedBytes);
         }
 
-        /// <exception cref="CryptographicException">
-        /// The payload is malformed, uses an unknown key version, or failed authentication
-        /// (tampered data, wrong key, or corruption).
-        /// </exception>
         public string Decrypt(string encrypted)
         {
             if (string.IsNullOrEmpty(encrypted))

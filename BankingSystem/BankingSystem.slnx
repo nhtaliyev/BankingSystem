@@ -1,6 +1,13 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".dockerignore" />
+    <File Path=".env" />
+    <File Path="docker-compose.yml" />
+    <File Path="Dockerfile.txt" />
+  </Folder>
   <Project Path="BankingSystem.API/BankingSystem.API.csproj" Id="8f392776-5493-485f-a291-2ef711f6e746" />
   <Project Path="BankingSystem.Business/BankingSystem.Business.csproj" />
   <Project Path="BankingSystem.Core/BankingSystem.Core.csproj" />
   <Project Path="BankingSystem.Data/BankingSystem.Data.csproj" />
+  <Project Path="BankingSystem.MVC/BankingSystem.MVC.csproj" Id="05b2fd48-c052-45cb-8552-8f072c3e22f9" />
 </Solution>
