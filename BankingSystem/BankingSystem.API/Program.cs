@@ -2,11 +2,9 @@ using BankingSystem.API.Extensions;
 using BankingSystem.API.Middlewares;
 using BankingSystem.Business;
 using BankingSystem.Business.ExternalServices;
-using BankingSystem.Business.ExternalServices.Implementations;
 using BankingSystem.Core.Models;
 using BankingSystem.Data;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.RateLimiting;
 using Serilog;
 using System.Security.Claims;
 using System.Threading.RateLimiting;
@@ -118,6 +116,8 @@ namespace BankingSystem.API
                     };
                 });
 
+                app.UseMiddleware<ExceptionHandlingMiddleware>();
+
                 if (app.Environment.IsDevelopment())
                 {
                     app.MapOpenApi();
@@ -133,7 +133,7 @@ namespace BankingSystem.API
 
                 app.UseAuthentication();
                 app.UseMiddleware<LogUserContextMiddleware>();
-                app.UseMiddleware<ExceptionHandlingMiddleware>();
+                //app.UseMiddleware<ExceptionHandlingMiddleware>();
                 app.UseAuthorization();
 
                 app.MapControllers();

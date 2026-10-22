@@ -22,7 +22,6 @@ namespace BankingSystem.Business.Implementations
         private const int RefreshTokenLifetimeDays = 7;
         private const int MinSecretKeyBytes = 32;
 
-        // Same message for "unknown email" and "bad token" so the reset endpoint can't be used to find registered emails.
         private const string InvalidResetMessage = "Invalid or expired password reset request.";
 
         private readonly UserManager<AppUser> _userManager;
@@ -198,7 +197,6 @@ namespace BankingSystem.Business.Implementations
                 throw new BusinessValidationException($"Failed to change password: {Describe(result)}");
             }
 
-            // Sessions started with the old password must not survive the change.
             await RevokeAfterPasswordChangeAsync(appUser);
 
             _logger.LogInformation("Password changed for user {UserId}", userId);
@@ -216,10 +214,6 @@ namespace BankingSystem.Business.Implementations
 
             var token = await _userManager.GeneratePasswordResetTokenAsync(appUser);
 
-            // TODO: send `token` via email/notification service (IEmailService, etc.).
-            //  - URL-encode it (WebEncoders.Base64UrlEncode) before putting it in a link.
-            //  - NEVER log the token or the reset link.
-            //  - Do not return the token directly to the caller.
             _ = token;
 
             _logger.LogInformation("Password reset requested for user {UserId}", appUser.Id);
@@ -246,7 +240,6 @@ namespace BankingSystem.Business.Implementations
                     throw new BadRequestException(InvalidResetMessage);
                 }
 
-                // Only reachable with a valid token, so describing password-policy errors leaks nothing.
                 throw new BusinessValidationException($"Failed to reset password: {Describe(result)}");
             }
 
@@ -258,7 +251,6 @@ namespace BankingSystem.Business.Implementations
 
         public async Task ConfirmEmailAsync(ConfirmEmailDto dto, CancellationToken cancellationToken = default)
         {
-            // Unknown user and bad token give the same answer, so user ids can't be probed.
             var appUser = await _userManager.FindByIdAsync(dto.UserId);
             if (appUser == null)
                 throw new BusinessValidationException("Failed to confirm email");
@@ -284,7 +276,6 @@ namespace BankingSystem.Business.Implementations
             }
             catch (InvalidOperationException ex)
             {
-                // Identity throws (instead of returning Failed) when the role doesn't exist.
                 roleResult = IdentityResult.Failed(new IdentityError { Code = "RoleMissing", Description = ex.Message });
             }
 
@@ -295,7 +286,6 @@ namespace BankingSystem.Business.Implementations
                 "Could not assign role {Role} to new user {UserId}: {ErrorCodes}. Rolling the registration back",
                 CustomerRole, appUser.Id, ErrorCodes(roleResult));
 
-            // Without this the user would exist with no role at all.
             var deleteResult = await _userManager.DeleteAsync(appUser);
             if (!deleteResult.Succeeded)
                 _logger.LogCritical("Rollback failed: user {UserId} exists without a role", appUser.Id);
@@ -308,14 +298,12 @@ namespace BankingSystem.Business.Implementations
             var roles = await _userManager.GetRolesAsync(appUser);
             var token = GenerateToken(appUser, roles);
 
-            // Only a hash of the refresh token is stored: a leaked database must not leak usable sessions.
             appUser.RefreshToken = HashToken(token.RefreshToken);
             appUser.RefreshTokenExpiryTime = UtcNow.AddDays(RefreshTokenLifetimeDays);
 
             var result = await _userManager.UpdateAsync(appUser);
             if (!result.Succeeded)
             {
-                // Two parallel refreshes with the same token: the loser lands here.
                 if (result.Errors.Any(e => e.Code == "ConcurrencyFailure"))
                 {
                     _logger.LogWarning("Concurrent token rotation detected for user {UserId}", appUser.Id);
@@ -363,7 +351,6 @@ namespace BankingSystem.Business.Implementations
             if (string.IsNullOrEmpty(appUser.RefreshToken) || string.IsNullOrEmpty(providedRefreshToken))
                 return false;
 
-            // Explicit null check: "null <= now" is false in C#, which would let a token without an expiry through.
             if (appUser.RefreshTokenExpiryTime is null || appUser.RefreshTokenExpiryTime <= UtcNow)
                 return false;
 
@@ -432,8 +419,8 @@ namespace BankingSystem.Business.Implementations
                 ValidAudience = _configuration["JWT:audience"],
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = GetSigningKey(),
-                ValidAlgorithms = new[] { SecurityAlgorithms.HmacSha256 }, // blocks algorithm-confusion attacks
-                ValidateLifetime = false // expired tokens are expected here
+                ValidAlgorithms = new[] { SecurityAlgorithms.HmacSha256 },
+                ValidateLifetime = false
             };
 
             try
@@ -442,7 +429,6 @@ namespace BankingSystem.Business.Implementations
             }
             catch (Exception ex) when (ex is SecurityTokenException or ArgumentException)
             {
-                // Garbage or tampered tokens throw here; without this they would surface as a 500.
                 _logger.LogWarning("Rejected an invalid access token during refresh ({Reason})", ex.GetType().Name);
                 throw new UnauthorizedException("Invalid token");
             }
@@ -451,11 +437,9 @@ namespace BankingSystem.Business.Implementations
         private static string Describe(IdentityResult result) =>
             string.Join("; ", result.Errors.Select(e => e.Description));
 
-        // Codes ("DuplicateEmail", "PasswordTooShort", ...) are safe to log; descriptions can echo user input.
         private static string ErrorCodes(IdentityResult result) =>
             string.Join(", ", result.Errors.Select(e => e.Code));
 
-        // "nihat@example.com" -> "n***@example.com": enough to correlate failed logins, without storing full emails in logs.
         private static string MaskEmail(string? email)
         {
             if (string.IsNullOrWhiteSpace(email))

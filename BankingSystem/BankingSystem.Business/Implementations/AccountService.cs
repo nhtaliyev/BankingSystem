@@ -38,11 +38,10 @@ namespace BankingSystem.Business.Implementations
 
         private DateTime UtcNow => _timeProvider.GetUtcNow().UtcDateTime;
 
-        // ───────────────────────────── Create ─────────────────────────────
 
         public async Task<AccountGetDto> CreateAccountAsync(AccountCreateDto dto, CancellationToken cancellationToken = default)
         {
-            var ownerUserId = _currentUser.UserId;   // always the caller, never client input
+            var ownerUserId = _currentUser.UserId;
             var now = UtcNow;
 
             var account = _mapper.Map<Account>(dto);
@@ -63,7 +62,6 @@ namespace BankingSystem.Business.Implementations
             return _mapper.Map<AccountGetDto>(account);
         }
 
-        // ────────────────────────────── Read ──────────────────────────────
 
         public async Task<AccountGetDto> GetByIdAsync(int id, CancellationToken cancellationToken = default)
         {
@@ -83,13 +81,12 @@ namespace BankingSystem.Business.Implementations
             }
 
             var accounts = await _accountRepository
-                .GetByExpression(asNoTracking: true, expression: a => a.AppUserId == appUserId)
+                .GetByExpression(asNoTracking: true, expression: a => a.AppUserId == appUserId).OrderBy(a => a.Id)
                 .ToListAsync(cancellationToken);
 
             return _mapper.Map<ICollection<AccountGetDto>>(accounts);
         }
 
-        // ──────────────────────── Status transitions ────────────────────────
 
         public async Task FreezeAccountAsync(int id, CancellationToken cancellationToken = default)
         {
@@ -120,7 +117,6 @@ namespace BankingSystem.Business.Implementations
 
         public async Task BlockAccountAsync(int id, CancellationToken cancellationToken = default)
         {
-            // A block is a bank-side action, so customers cannot do it (or undo it) themselves.
             EnsureAdmin("block", id);
 
             var account = await LoadAccountAsync(id, track: true, cancellationToken);
@@ -149,7 +145,6 @@ namespace BankingSystem.Business.Implementations
 
         public async Task CloseAccountAsync(int id, CancellationToken cancellationToken = default)
         {
-            // Includes are passed positionally: a named argument on a params parameter must be an array.
             var account = await _accountRepository
                 .GetByExpression(false, a => a.Id == id, a => a.Cards)
                 .FirstOrDefaultAsync(cancellationToken)
@@ -169,12 +164,7 @@ namespace BankingSystem.Business.Implementations
             await ChangeStatusAsync(account, AccountStatus.Closed, cancellationToken);
         }
 
-        // ───────────────────────────── Helpers ─────────────────────────────
-
-        /// <summary>
-        /// Loads an account and verifies the caller may access it. An account owned by somebody
-        /// else is reported as "not found" so ids can't be probed.
-        /// </summary>
+       
         private async Task<Account> LoadAccountAsync(int id, bool track, CancellationToken cancellationToken)
         {
             var account = await _accountRepository
@@ -230,7 +220,6 @@ namespace BankingSystem.Business.Implementations
                 account.Id, oldStatus, newStatus, _currentUser.UserId);
         }
 
-        /// <summary>Commits and turns an optimistic-concurrency failure into a 409.</summary>
         private async Task SaveAsync(int accountId, CancellationToken cancellationToken)
         {
             try
@@ -260,11 +249,9 @@ namespace BankingSystem.Business.Implementations
                 _logger.LogWarning("Generated account number collided with an existing account (attempt {Attempt})", attempt);
             }
 
-            // Not an "external service" problem, so this is a plain 500 and gets logged as an error.
             throw new InvalidOperationException("Failed to generate a unique account number after several attempts.");
         }
 
-        // One random digit at a time: no modulo bias, and every digit comes from a CSPRNG.
         private static string GenerateAccountNumber()
         {
             Span<char> digits = stackalloc char[AccountNumberLength];

@@ -46,7 +46,6 @@ namespace BankingSystem.Business.Implementations
             if (page < 1) page = 1;
             if (pageSize < 1 || pageSize > 100) pageSize = 20;
 
-            // ThenBy(Id): FullName is not unique, and paging over a non-unique sort can skip or repeat rows.
             var query = _userManager.Users
                 .AsNoTracking()
                 .OrderBy(u => u.FullName)
@@ -102,7 +101,6 @@ namespace BankingSystem.Business.Implementations
             var user = await _userManager.FindByIdAsync(id)
                 ?? throw UserNotFound(id);
 
-            // Registration rejects duplicate phone numbers; updates must too.
             var phoneChanged = !string.Equals(user.PhoneNumber, dto.PhoneNumber, StringComparison.Ordinal);
             if (phoneChanged)
             {
@@ -113,14 +111,9 @@ namespace BankingSystem.Business.Implementations
                     throw new ConflictException("This phone number is already used");
             }
 
-            // NOTE: dto.Email is intentionally not applied. Changing an email needs a confirmation flow
-            // (UserManager.GenerateChangeEmailTokenAsync / ChangeEmailAsync). Remove Email from UserEditDto
-            // or implement that flow; silently ignoring it is misleading.
             user.FullName = dto.FullName;
             user.Birthday = dto.Birthday;
 
-            // SetPhoneNumberAsync also resets PhoneNumberConfirmed, which a plain property assignment would not.
-            // Both calls persist every pending change on the tracked entity.
             var result = phoneChanged
                 ? await _userManager.SetPhoneNumberAsync(user, dto.PhoneNumber)
                 : await _userManager.UpdateAsync(user);
@@ -128,7 +121,6 @@ namespace BankingSystem.Business.Implementations
             if (!result.Succeeded)
                 throw ToException(result, "Failed to update user");
 
-            // Field values are personal data, so only the fact of the change is logged.
             _logger.LogInformation(
                 "Profile of user {TargetUserId} updated by user {ActorUserId} (phone changed: {PhoneChanged})",
                 id, _currentUser.UserId, phoneChanged);
@@ -149,7 +141,6 @@ namespace BankingSystem.Business.Implementations
             user.LockoutEnabled = true;
             user.LockoutEnd = DateTimeOffset.MaxValue;
 
-            // Kill the session: without this the user could keep refreshing tokens.
             user.RefreshToken = null;
             user.RefreshTokenExpiryTime = null;
 
@@ -166,7 +157,6 @@ namespace BankingSystem.Business.Implementations
 
         public async Task AssignRoleAsync(string userId, string role, CancellationToken cancellationToken = default)
         {
-            // Without this check any logged-in user could give themselves the Admin role.
             EnsureAdmin("assign a role to", userId);
 
             var user = await _userManager.FindByIdAsync(userId)
@@ -201,7 +191,6 @@ namespace BankingSystem.Business.Implementations
             throw new ForbiddenException("This action requires the Admin role.");
         }
 
-        /// <summary>A user may touch their own record; anything else is reported as "not found".</summary>
         private void EnsureSelfOrAdmin(string targetUserId)
         {
             if (_currentUser.IsAdmin || targetUserId == _currentUser.UserId)

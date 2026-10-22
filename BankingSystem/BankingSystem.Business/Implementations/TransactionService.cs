@@ -165,7 +165,6 @@ namespace BankingSystem.Business.Implementations
         {
             EnsureCaller(appUserId);
 
-            // Hard cap so one request can't pull an entire history. Real paging (like GetAllUsersAsync) is the proper fix.
             var list = await _transactionRepository
                 .GetByExpression(asNoTracking: true, expression: OwnedBy(appUserId))
                 .OrderByDescending(t => t.CreatedTime)
@@ -240,7 +239,7 @@ namespace BankingSystem.Business.Implementations
 
         private async Task EnsureDailyLimitAsync(string appUserId, Card card, decimal amount, DateTime now, CancellationToken cancellationToken)
         {
-            var startOfDay = now.Date; // UTC midnight; see the note about the bank's local day
+            var startOfDay = now.Date;
             var spentToday = await _transactionRepository
                 .GetByExpression(asNoTracking: true,
                     expression: t => t.FromCardId == card.Id

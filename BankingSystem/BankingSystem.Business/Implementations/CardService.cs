@@ -69,7 +69,7 @@ namespace BankingSystem.Business.Implementations
             card.UpdatedTime = now;
 
             await _cardRepository.AddAsync(card, cancellationToken);
-            await _cardRepository.CommitAsync(cancellationToken); // card.Id exists only after this
+            await _cardRepository.CommitAsync(cancellationToken);
 
             _logger.LogInformation(
                 "Card {CardId} (ending {Last4}) created for account {AccountId} with daily limit {DailyLimit}",
@@ -113,8 +113,6 @@ namespace BankingSystem.Business.Implementations
 
             var oldLimit = card.DailyLimit;
 
-            // Set the field explicitly instead of _mapper.Map(dto, card): the mapper could also copy
-            // dto.RowVersion over the entity's RowVersion and silently break the concurrency check.
             card.DailyLimit = dto.DailyLimit;
             card.UpdatedTime = UtcNow;
 
@@ -155,7 +153,6 @@ namespace BankingSystem.Business.Implementations
             if (card.Status != CardStatus.Frozen)
                 throw new BusinessValidationException($"Card with id '{id}' is not frozen (current status: {card.Status}).");
 
-            // An expired card must never come back to life.
             if (IsExpired(card))
                 throw new BusinessValidationException($"Card with id '{id}' is expired and cannot be unfrozen.");
 
@@ -209,7 +206,6 @@ namespace BankingSystem.Business.Implementations
 
         public async Task<CardNumberRevealDto> RevealCardNumberAsync(int id, CancellationToken cancellationToken = default)
         {
-            // Owner only: even an admin must not be able to see a customer's full card number.
             var card = await LoadCardAsync(id, track: false, allowAdmin: false, cancellationToken);
 
             if (card.Status is CardStatus.Closed or CardStatus.Blocked || IsExpired(card))
@@ -222,12 +218,10 @@ namespace BankingSystem.Business.Implementations
             }
             catch (CryptographicException ex)
             {
-                // AES-GCM failing means the data was modified, the key changed, or the row is corrupted.
                 _logger.LogError(ex,
                     "Failed to decrypt card number for card {CardId}. Possible data corruption, tampering, or wrong encryption key",
                     id);
 
-                // Adjust to your ExternalServiceException constructor.
                 throw new ExternalServiceException("The card number could not be retrieved.");
             }
 
@@ -240,10 +234,6 @@ namespace BankingSystem.Business.Implementations
 
         // ───────────────────────────── Helpers ─────────────────────────────
 
-        /// <summary>
-        /// Loads a card together with its account and verifies the caller may access it.
-        /// A card owned by somebody else is reported as "not found" so ids can't be probed.
-        /// </summary>
         private async Task<Card> LoadCardAsync(int id, bool track, bool allowAdmin, CancellationToken cancellationToken)
         {
             var card = await _cardRepository
@@ -294,7 +284,6 @@ namespace BankingSystem.Business.Implementations
                 throw new BusinessValidationException($"Card with id '{card.Id}' is closed and cannot be modified.");
         }
 
-        // Nothing flips the status to Expired automatically, so also compare the date itself.
         private bool IsExpired(Card card)
         {
             return card.Status == CardStatus.Expired || card.ExpiryDate <= UtcNow;
@@ -314,7 +303,6 @@ namespace BankingSystem.Business.Implementations
                 card.Id, oldStatus, newStatus);
         }
 
-        /// <summary>Commits and turns an optimistic-concurrency failure into a 409 for every operation.</summary>
         private async Task SaveAsync(int cardId, CancellationToken cancellationToken)
         {
             try
