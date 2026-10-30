@@ -14,8 +14,8 @@ namespace BankingSystem.Business.DTOs.UserDTOs
                 .Matches(@"^\+?[1-9]\d{7,14}$").WithMessage("Phone number must be in international format.")
                 .When(x => !string.IsNullOrWhiteSpace(x.PhoneNumber));
             RuleFor(x => x.Birthday)
-                .LessThan(DateTime.UtcNow.Date).WithMessage("Birthday must be in the past.")
-                .Must(b => b <= DateTime.UtcNow.Date.AddYears(-18)).WithMessage("You must be at least 18.");
+                .Must(b => b.Date < DateTime.UtcNow.Date).WithMessage("Birthday must be in the past.")
+                .Must(b => b.Date <= DateTime.UtcNow.Date.AddYears(-18)).WithMessage("You must be at least 18.");
         }
     }
 }

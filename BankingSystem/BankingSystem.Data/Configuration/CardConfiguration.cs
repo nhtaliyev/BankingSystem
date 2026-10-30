@@ -14,11 +14,11 @@ namespace BankingSystem.Data.Configuration
                 .IsRequired();
 
             builder.Property(c => c.CardNumberHash)
-                .HasMaxLength(64) // hex-encoded SHA256/HMAC-SHA256 output = 64 chars
+                .HasMaxLength(64)
                 .IsRequired();
 
             builder.Property(c => c.CardNumberEncrypted)
-                .HasMaxLength(256) // AES output is longer than the raw input; give it room
+                .HasMaxLength(256)
                 .IsRequired();
 
             builder.HasIndex(c => c.CardNumberHash)
@@ -34,6 +34,12 @@ namespace BankingSystem.Data.Configuration
                 .HasConversion<string>()
                 .HasMaxLength(20)
                 .IsRequired();
+
+            builder.Property(c => c.RowVersion)
+                .HasColumnName("xmin")
+                .HasColumnType("xid")
+                .ValueGeneratedOnAddOrUpdate()
+                .IsConcurrencyToken();
 
             builder.HasOne(c => c.Account)
                 .WithMany(a => a.Cards)

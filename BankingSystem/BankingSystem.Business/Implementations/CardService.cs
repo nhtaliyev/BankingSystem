@@ -116,7 +116,7 @@ namespace BankingSystem.Business.Implementations
             card.DailyLimit = dto.DailyLimit;
             card.UpdatedTime = UtcNow;
 
-            await _cardRepository.SetOriginalRowVersionAsync(card, dto.RowVersion, cancellationToken);
+            _cardRepository.SetOriginalRowVersion(card, dto.RowVersion);
             await SaveAsync(id, cancellationToken);
 
             _logger.LogInformation(
@@ -161,6 +161,8 @@ namespace BankingSystem.Business.Implementations
 
         public async Task BlockCardAsync(int id, CancellationToken cancellationToken = default)
         {
+            EnsureAdmin("block", id);
+
             var card = await LoadCardAsync(id, track: true, allowAdmin: true, cancellationToken);
 
             EnsureNotClosed(card);
@@ -176,6 +178,8 @@ namespace BankingSystem.Business.Implementations
 
         public async Task UnblockCardAsync(int id, CancellationToken cancellationToken = default)
         {
+            EnsureAdmin("unblock", id);
+
             var card = await LoadCardAsync(id, track: true, allowAdmin: true, cancellationToken);
 
             EnsureNotClosed(card);
@@ -269,6 +273,18 @@ namespace BankingSystem.Business.Implementations
         {
             return (allowAdmin && _currentUser.IsAdmin)
                    || account.AppUserId == _currentUser.UserId;
+        }
+
+        private void EnsureAdmin(string action, int cardId)
+        {
+            if (_currentUser.IsAdmin)
+                return;
+
+            _logger.LogWarning(
+                "Access denied: user {UserId} tried to {Action} card {CardId} without the Admin role",
+                _currentUser.UserId, action, cardId);
+
+            throw new ForbiddenException("This action requires the Admin role.");
         }
 
         private static void EnsureAccountIsActive(Core.Models.Account account)

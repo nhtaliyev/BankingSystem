@@ -1,7 +1,10 @@
 using BankingSystem.API.Extensions;
+using BankingSystem.API.Filters;
 using BankingSystem.API.Middlewares;
+using BankingSystem.API.Services;
 using BankingSystem.Business;
 using BankingSystem.Business.ExternalServices;
+using BankingSystem.Business.Interfaces;
 using BankingSystem.Core.Models;
 using BankingSystem.Data;
 using Microsoft.AspNetCore.Identity;
@@ -13,7 +16,7 @@ namespace BankingSystem.API
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.Console()
@@ -37,10 +40,11 @@ namespace BankingSystem.API
                         .AllowAnyMethod());
                 });
 
-                builder.Services.AddControllers();
+                builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>());
                 builder.Services.AddOpenApi();
 
                 builder.Services.AddHttpContextAccessor();
+                builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
                 builder.Services.AddSingleton(TimeProvider.System);
 
                 builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
@@ -84,6 +88,15 @@ namespace BankingSystem.API
                             PermitLimit = 10,
                             Window = TimeSpan.FromMinutes(1)
                         }));
+
+                    options.AddPolicy("sensitive", context =>
+                        RateLimitPartition.GetFixedWindowLimiter(
+                            context.User.FindFirstValue(ClaimTypes.NameIdentifier) ?? ClientKey(context),
+                            _ => new FixedWindowRateLimiterOptions
+                            {
+                                PermitLimit = 5,
+                                Window = TimeSpan.FromMinutes(1)
+                            }));
 
                     options.OnRejected = (context, _) =>
                     {
@@ -129,16 +142,17 @@ namespace BankingSystem.API
 
                 app.UseHttpsRedirection();
                 app.UseCors("Frontend");
-                app.UseRateLimiter();
 
                 app.UseAuthentication();
+                app.UseRateLimiter();
                 app.UseMiddleware<LogUserContextMiddleware>();
-                //app.UseMiddleware<ExceptionHandlingMiddleware>();
                 app.UseAuthorization();
 
                 app.MapControllers();
 
-                app.Run();
+                await app.InitializeAsync();
+
+                await app.RunAsync();
             }
             catch (Exception ex) when (ex is not HostAbortedException)
             {

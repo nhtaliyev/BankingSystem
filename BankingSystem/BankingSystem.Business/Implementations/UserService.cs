@@ -112,7 +112,7 @@ namespace BankingSystem.Business.Implementations
             }
 
             user.FullName = dto.FullName;
-            user.Birthday = dto.Birthday;
+            user.Birthday = DateTime.SpecifyKind(dto.Birthday.Date, DateTimeKind.Utc);
 
             var result = phoneChanged
                 ? await _userManager.SetPhoneNumberAsync(user, dto.PhoneNumber)

@@ -11,8 +11,7 @@ namespace BankingSystem.Core.Models
         public Currency Currency { get; set; }
         public AccountStatus Status { get; set; }
 
-        [Timestamp]
-        public byte[] RowVersion { get; set; } = null!;
+        public uint RowVersion { get; set; }
 
         public string AppUserId { get; set; } = null!;
         public AppUser User { get; set; } = null!;

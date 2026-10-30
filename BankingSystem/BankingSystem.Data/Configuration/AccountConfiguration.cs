@@ -28,8 +28,14 @@ namespace BankingSystem.Data.Configuration
                 .HasMaxLength(20)
                 .IsRequired();
 
+            builder.Property(a => a.RowVersion)
+                .HasColumnName("xmin")
+                .HasColumnType("xid")
+                .ValueGeneratedOnAddOrUpdate()
+                .IsConcurrencyToken();
+
             builder.HasOne(a => a.User)
-                .WithMany() // add AppUser.Accounts collection later if you need it
+                .WithMany() 
                 .HasForeignKey(a => a.AppUserId)
                 .OnDelete(DeleteBehavior.Restrict);
         }

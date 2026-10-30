@@ -19,6 +19,10 @@ namespace BankingSystem.API.Extensions
             var secretKey = jwt["secretKey"]
                 ?? throw new InvalidOperationException("JWT:secretKey is not configured.");
 
+            if (string.IsNullOrWhiteSpace(jwt["issuer"]) || string.IsNullOrWhiteSpace(jwt["audience"]))
+                throw new InvalidOperationException(
+                    "JWT:issuer and JWT:audience must be configured (user-secrets or environment variables).");
+
             var keyBytes = Encoding.UTF8.GetBytes(secretKey);
             if (keyBytes.Length < MinSecretKeyBytes)
                 throw new InvalidOperationException($"JWT:secretKey must be at least {MinSecretKeyBytes} bytes long.");

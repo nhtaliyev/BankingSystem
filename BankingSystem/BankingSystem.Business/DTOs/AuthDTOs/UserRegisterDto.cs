@@ -9,29 +9,22 @@ namespace BankingSystem.Business.DTOs.AuthDTOs
     {
         public UserRegisterDtoValidator()
         {
-            RuleFor(x => x.FullName).NotNull().NotEmpty().MaximumLength(60);
+            RuleFor(x => x.FullName).NotEmpty().MaximumLength(100);
 
-            RuleFor(x => x.Password)
-                .NotEmpty().WithMessage("Password is required")
-                .MinimumLength(8).WithMessage("Password must be at least 8 characters")
-                .MaximumLength(40).WithMessage("Password must be less than 40 characters")
-                .Matches(@"[A-Z]").WithMessage("Password must contain at least one uppercase letter")
-                .Matches(@"[a-z]").WithMessage("Password must contain at least one lowercase letter")
-                .Matches(@"\d").WithMessage("Password must contain at least one digit")
-                .Matches(@"[\W_]").WithMessage("Password must contain at least one special character");
+            RuleFor(x => x.Email).NotEmpty().EmailAddress().MaximumLength(256);
 
+            RuleFor(x => x.PhoneNumber)
+                .NotEmpty()
+                .Matches(@"^\+?[1-9]\d{7,14}$").WithMessage("Phone number must be in international format.");
 
-            RuleFor(x => x.Email).NotNull().NotEmpty();
+            RuleFor(x => x.Password).MeetsPasswordPolicy();
 
-            RuleFor(x => x.Birthday).NotEmpty().WithMessage("birthday cant be empty");
+            RuleFor(x => x.ConfirmPassword)
+                .Equal(x => x.Password).WithMessage("Password and confirm password don't match");
 
-            RuleFor(x => x).Custom((x, context) =>
-            {
-                if (x.Password != x.ConfirmPassword)
-                {
-                    context.AddFailure("ConfirmPassword", "password and confirm password dont match");
-                }
-            });
+            RuleFor(x => x.Birthday)
+                .NotEmpty().WithMessage("Birthday can't be empty")
+                .Must(b => b.Date <= DateTime.UtcNow.Date.AddYears(-18)).WithMessage("You must be at least 18.");
         }
     }
 }

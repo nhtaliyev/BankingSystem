@@ -3,5 +3,5 @@
 namespace BankingSystem.Business.DTOs.AccountDTOs
 {
     public record AccountGetDto(int Id, string AccountNumber, decimal Balance, Currency Currency, AccountStatus Status, 
-                            string AppUserId); // RowVersion removed
+                            string AppUserId, uint RowVersion);
 }

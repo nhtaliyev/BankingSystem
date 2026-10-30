@@ -11,6 +11,7 @@ namespace BankingSystem.Business.Mappings
     {
         public MapProfile()
         {
+            // Entity -> DTO
             CreateMap<Account, AccountGetDto>();
             CreateMap<Card, CardGetDto>();
 
@@ -20,15 +21,8 @@ namespace BankingSystem.Business.Mappings
             CreateMap<AppUser, UserGetDto>()
                 .ForCtorParam(nameof(UserGetDto.AppUserId), opt => opt.MapFrom(src => src.Id));
 
-            CreateMap<CardEditDto, Card>(MemberList.Source)
-                .ForMember(d => d.RowVersion, o => o.Ignore())
-                .ForSourceMember(s => s.RowVersion, o => o.DoNotValidate());
-
-            CreateMap<UserEditDto, AppUser>(MemberList.Source)
-                .ForMember(d => d.Email, o => o.Ignore())
-                .ForMember(d => d.PhoneNumber, o => o.Ignore())
-                .ForSourceMember(s => s.Email, o => o.DoNotValidate())
-                .ForSourceMember(s => s.PhoneNumber, o => o.DoNotValidate());
+            CreateMap<AccountCreateDto, Account>(MemberList.Source);
+            CreateMap<CardCreateDto, Card>(MemberList.Source);
         }
     }
 }

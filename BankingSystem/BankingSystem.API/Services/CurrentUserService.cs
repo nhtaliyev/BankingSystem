@@ -1,6 +1,5 @@
 ﻿using BankingSystem.Business.Exceptions;
 using BankingSystem.Business.Interfaces;
-using Microsoft.AspNetCore.Http;
 using System.Security.Claims;
 
 namespace BankingSystem.API.Services

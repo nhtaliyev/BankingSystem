@@ -15,8 +15,7 @@ namespace BankingSystem.Core.Models
         public decimal Balance { get; set; }
         public decimal DailyLimit { get; set; }
 
-        [Timestamp]
-        public byte[] RowVersion { get; set; } = null!;
+        public uint RowVersion { get; set; }
 
         public int AccountId { get; set; }
         public Account Account { get; set; } = null!;

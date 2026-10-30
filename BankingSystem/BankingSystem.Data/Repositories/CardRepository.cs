@@ -12,10 +12,10 @@ namespace BankingSystem.Data.Repositories
             _context = context;
         }
 
-        public Task SetOriginalRowVersionAsync(Card card, byte[] rowVersion, CancellationToken cancellationToken = default)
+        public void SetOriginalRowVersion(Card card, uint rowVersion)
         {
             _context.Entry(card).Property(c => c.RowVersion).OriginalValue = rowVersion;
-            return Task.CompletedTask;
         }
+
     }
 }

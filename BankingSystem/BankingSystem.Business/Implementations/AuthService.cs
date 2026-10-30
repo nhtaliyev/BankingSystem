@@ -18,6 +18,7 @@ namespace BankingSystem.Business.Implementations
     public class AuthService : IAuthService
     {
         private const string CustomerRole = "Customer";
+        private const string SecurityStampClaimType = "security_stamp";
         private const int AccessTokenLifetimeMinutes = 30;
         private const int RefreshTokenLifetimeDays = 7;
         private const int MinSecretKeyBytes = 32;
@@ -68,7 +69,7 @@ namespace BankingSystem.Business.Implementations
             var appUser = new AppUser
             {
                 Email = dto.Email,
-                Birthday = dto.Birthday,
+                Birthday = DateTime.SpecifyKind(dto.Birthday.Date, DateTimeKind.Utc),
                 FullName = dto.FullName,
                 PhoneNumber = dto.PhoneNumber,
                 UserName = dto.Email,
@@ -324,6 +325,7 @@ namespace BankingSystem.Business.Implementations
                 new(ClaimTypes.NameIdentifier, appUser.Id),
                 new(ClaimTypes.Name, appUser.FullName),
                 new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new(SecurityStampClaimType, appUser.SecurityStamp ?? string.Empty),
             };
             claims.AddRange(roles.Select(r => new Claim(ClaimTypes.Role, r)));
 

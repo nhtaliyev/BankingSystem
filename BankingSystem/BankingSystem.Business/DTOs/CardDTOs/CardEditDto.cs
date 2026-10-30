@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BankingSystem.Business.DTOs.CardDTOs
 {
-    public record CardEditDto(decimal DailyLimit, byte[] RowVersion);
+    public record CardEditDto(decimal DailyLimit, uint RowVersion);
 
     public class CardEditDtoValidator : AbstractValidator<CardEditDto>
     {

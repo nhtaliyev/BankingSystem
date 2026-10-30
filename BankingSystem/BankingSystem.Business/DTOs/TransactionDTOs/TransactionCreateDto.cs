@@ -26,7 +26,7 @@ namespace BankingSystem.Business.DTOs.TransactionDTOs
                 .PrecisionScale(18, 2, true).WithMessage("Amount can have at most 2 decimal places.");
 
             RuleFor(x => x.Currency).NotNull().IsInEnum();
-            RuleFor(x => x.Description).MaximumLength(250);
+            RuleFor(x => x.Description).MaximumLength(200);
 
             RuleFor(x => x)
                 .Must(x => x.FromAccountId.HasValue ^ x.FromCardId.HasValue)
