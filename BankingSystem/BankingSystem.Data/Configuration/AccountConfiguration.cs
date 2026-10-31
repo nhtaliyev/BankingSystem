@@ -35,7 +35,7 @@ namespace BankingSystem.Data.Configuration
                 .IsConcurrencyToken();
 
             builder.HasOne(a => a.User)
-                .WithMany() 
+                .WithMany(u => u.Accounts) 
                 .HasForeignKey(a => a.AppUserId)
                 .OnDelete(DeleteBehavior.Restrict);
         }

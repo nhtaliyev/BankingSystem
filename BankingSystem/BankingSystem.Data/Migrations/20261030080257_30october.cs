@@ -26,11 +26,6 @@ namespace BankingSystem.Data.Migrations
                 newName: "CreatedTime");
 
             migrationBuilder.RenameColumn(
-                name: "RowVersion",
-                table: "Cards",
-                newName: "xmin");
-
-            migrationBuilder.RenameColumn(
                 name: "UpdatedDate",
                 table: "Cards",
                 newName: "UpdatedTime");
@@ -39,11 +34,6 @@ namespace BankingSystem.Data.Migrations
                 name: "CreatedDate",
                 table: "Cards",
                 newName: "CreatedTime");
-
-            migrationBuilder.RenameColumn(
-                name: "RowVersion",
-                table: "Accounts",
-                newName: "xmin");
 
             migrationBuilder.RenameColumn(
                 name: "UpdatedDate",
@@ -55,15 +45,15 @@ namespace BankingSystem.Data.Migrations
                 table: "Accounts",
                 newName: "CreatedTime");
 
-            migrationBuilder.AlterColumn<uint>(
-                name: "xmin",
-                table: "Cards",
-                type: "xid",
-                rowVersion: true,
-                nullable: false,
-                oldClrType: typeof(byte[]),
-                oldType: "bytea",
-                oldRowVersion: true);
+            // The old bytea RowVersion columns are replaced by PostgreSQL's built-in xmin system column.
+            // xmin already exists on every table, so nothing is added here.
+            migrationBuilder.DropColumn(
+                name: "RowVersion",
+                table: "Cards");
+
+            migrationBuilder.DropColumn(
+                name: "RowVersion",
+                table: "Accounts");
 
             migrationBuilder.AlterColumn<string>(
                 name: "FullName",
@@ -82,20 +72,10 @@ namespace BankingSystem.Data.Migrations
                 table: "AspNetUsers",
                 type: "timestamp with time zone",
                 nullable: false,
-                defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc),
                 oldClrType: typeof(DateTime),
                 oldType: "timestamp with time zone",
                 oldNullable: true);
-
-            migrationBuilder.AlterColumn<uint>(
-                name: "xmin",
-                table: "Accounts",
-                type: "xid",
-                rowVersion: true,
-                nullable: false,
-                oldClrType: typeof(byte[]),
-                oldType: "bytea",
-                oldRowVersion: true);
         }
 
         /// <inheritdoc />
@@ -112,11 +92,6 @@ namespace BankingSystem.Data.Migrations
                 newName: "CreatedDate");
 
             migrationBuilder.RenameColumn(
-                name: "xmin",
-                table: "Cards",
-                newName: "RowVersion");
-
-            migrationBuilder.RenameColumn(
                 name: "UpdatedTime",
                 table: "Cards",
                 newName: "UpdatedDate");
@@ -125,11 +100,6 @@ namespace BankingSystem.Data.Migrations
                 name: "CreatedTime",
                 table: "Cards",
                 newName: "CreatedDate");
-
-            migrationBuilder.RenameColumn(
-                name: "xmin",
-                table: "Accounts",
-                newName: "RowVersion");
 
             migrationBuilder.RenameColumn(
                 name: "UpdatedTime",
@@ -141,15 +111,21 @@ namespace BankingSystem.Data.Migrations
                 table: "Accounts",
                 newName: "CreatedDate");
 
-            migrationBuilder.AlterColumn<byte[]>(
+            migrationBuilder.AddColumn<byte[]>(
                 name: "RowVersion",
                 table: "Cards",
                 type: "bytea",
                 rowVersion: true,
                 nullable: false,
-                oldClrType: typeof(uint),
-                oldType: "xid",
-                oldRowVersion: true);
+                defaultValue: new byte[0]);
+
+            migrationBuilder.AddColumn<byte[]>(
+                name: "RowVersion",
+                table: "Accounts",
+                type: "bytea",
+                rowVersion: true,
+                nullable: false,
+                defaultValue: new byte[0]);
 
             migrationBuilder.AlterColumn<string>(
                 name: "FullName",
@@ -176,16 +152,6 @@ namespace BankingSystem.Data.Migrations
                 maxLength: 13,
                 nullable: false,
                 defaultValue: "");
-
-            migrationBuilder.AlterColumn<byte[]>(
-                name: "RowVersion",
-                table: "Accounts",
-                type: "bytea",
-                rowVersion: true,
-                nullable: false,
-                oldClrType: typeof(uint),
-                oldType: "xid",
-                oldRowVersion: true);
         }
     }
 }

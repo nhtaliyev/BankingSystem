@@ -39,9 +39,6 @@ namespace BankingSystem.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("AppUserId1")
-                        .HasColumnType("text");
-
                     b.Property<decimal>("Balance")
                         .HasColumnType("decimal(18,2)");
 
@@ -76,8 +73,6 @@ namespace BankingSystem.Data.Migrations
                         .IsUnique();
 
                     b.HasIndex("AppUserId");
-
-                    b.HasIndex("AppUserId1");
 
                     b.ToTable("Accounts");
                 });
@@ -430,14 +425,10 @@ namespace BankingSystem.Data.Migrations
             modelBuilder.Entity("BankingSystem.Core.Models.Account", b =>
                 {
                     b.HasOne("BankingSystem.Core.Models.AppUser", "User")
-                        .WithMany()
+                        .WithMany("Accounts")
                         .HasForeignKey("AppUserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
-
-                    b.HasOne("BankingSystem.Core.Models.AppUser", null)
-                        .WithMany("Accounts")
-                        .HasForeignKey("AppUserId1");
 
                     b.Navigation("User");
                 });
