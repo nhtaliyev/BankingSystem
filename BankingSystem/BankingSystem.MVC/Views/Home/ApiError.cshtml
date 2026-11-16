@@ -1,0 +1,10 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Something went wrong";
+}
+
+<div class="alert alert-danger mt-4" role="alert">
+    <h1 class="h5">We couldn't complete that</h1>
+    <p class="mb-0">@Model</p>
+</div>
+<a asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary">Back to home</a>

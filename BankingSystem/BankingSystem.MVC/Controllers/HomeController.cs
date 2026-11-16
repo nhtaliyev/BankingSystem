@@ -1,4 +1,4 @@
-using BankingSystem.MVC.Models;
+using BankingSystem.MVC.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
