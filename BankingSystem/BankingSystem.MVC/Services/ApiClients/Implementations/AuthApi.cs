@@ -1,6 +1,7 @@
-﻿using BankingSystem.MVC.ViewModels;
+﻿using BankingSystem.MVC.Services.ApiClients.Interfaces;
+using BankingSystem.MVC.ViewModels;
 
-namespace BankingSystem.MVC.Services.ApiClients;
+namespace BankingSystem.MVC.Services.ApiClients.Implementations;
 
 public class AuthApi : ApiClientBase, IAuthApi
 {

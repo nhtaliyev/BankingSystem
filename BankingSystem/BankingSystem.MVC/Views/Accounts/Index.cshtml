@@ -1,0 +1,40 @@
+﻿@model List<BankingSystem.MVC.ViewModels.Accounts.AccountViewModel>
+@{
+    ViewData["Title"] = "My accounts";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h3 mb-0">My accounts</h1>
+    <a asp-action="Create" class="btn btn-primary">Open new account</a>
+</div>
+
+@if (Model.Count == 0)
+{
+    <div class="alert alert-info">You don't have any accounts yet. Open your first one to get started.</div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>Account number</th>
+                    <th>Currency</th>
+                    <th class="text-end">Balance</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var account in Model)
+                {
+                    <tr>
+                        <td><a asp-action="Details" asp-route-id="@account.Id">@account.AccountNumber</a></td>
+                        <td>@account.Currency</td>
+                        <td class="text-end">@account.Balance.ToString("N2")</td>
+                        <td><partial name="_AccountStatusBadge" model="account.Status" /></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

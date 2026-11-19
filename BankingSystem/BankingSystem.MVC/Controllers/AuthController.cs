@@ -1,4 +1,4 @@
-﻿using BankingSystem.MVC.Services.ApiClients;
+﻿using BankingSystem.MVC.Services.ApiClients.Interfaces;
 using BankingSystem.MVC.Services.Auth;
 using BankingSystem.MVC.Services.Http;
 using BankingSystem.MVC.ViewModels;

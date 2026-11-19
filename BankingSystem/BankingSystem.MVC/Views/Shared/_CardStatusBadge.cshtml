@@ -1,0 +1,13 @@
+﻿@using BankingSystem.MVC.Enums
+@model CardStatus
+@{
+    var css = Model switch
+    {
+        CardStatus.Active => "bg-success",
+        CardStatus.Frozen => "bg-info text-dark",
+        CardStatus.Blocked => "bg-danger",
+        CardStatus.Expired => "bg-warning text-dark",
+        _ => "bg-secondary"
+    };
+}
+<span class="badge @css">@Model</span>

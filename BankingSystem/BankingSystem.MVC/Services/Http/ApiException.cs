@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using System.Net.Http.Json;
 using System.Text.Json;
 
 namespace BankingSystem.MVC.Services.Http;
@@ -25,6 +26,9 @@ public class ApiException : Exception
     public bool IsNotFound => StatusCode == HttpStatusCode.NotFound;
     public bool IsConflict => StatusCode == HttpStatusCode.Conflict;
 
+    public bool IsBusinessRuleViolation =>
+        StatusCode is HttpStatusCode.BadRequest or HttpStatusCode.Conflict or HttpStatusCode.UnprocessableEntity;
+
     internal static async Task<ApiException> FromResponseAsync(HttpResponseMessage response, CancellationToken cancellationToken)
     {
         ApiProblem? problem = null;
@@ -32,12 +36,14 @@ public class ApiException : Exception
         {
             problem = await response.Content.ReadFromJsonAsync<ApiProblem>(cancellationToken);
         }
-        catch (JsonException) { }
+        catch (JsonException) { }          
         catch (NotSupportedException) { }  
 
         var message = (int)response.StatusCode >= 500
             ? "Something went wrong on our side. Please try again later."
-            : problem?.Detail ?? problem?.Title ?? "The request could not be completed.";
+            : response.StatusCode == HttpStatusCode.TooManyRequests
+                ? problem?.Detail ?? "Too many requests. Please wait a moment and try again."
+                : problem?.Detail ?? problem?.Title ?? "The request could not be completed.";
 
         return new ApiException(response.StatusCode, message, errors: problem?.Errors);
     }

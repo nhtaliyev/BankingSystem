@@ -1,0 +1,50 @@
+﻿@model BankingSystem.MVC.ViewModels.Accounts.AccountViewModel
+@{
+    ViewData["Title"] = $"Account {Model.AccountNumber}";
+}
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-action="Index">My accounts</a></li>
+        <li class="breadcrumb-item active" aria-current="page">@Model.AccountNumber</li>
+    </ol>
+</nav>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="d-flex justify-content-between align-items-start">
+            <div>
+                <div class="text-muted small">Account number</div>
+                <h1 class="h4">@Model.AccountNumber</h1>
+            </div>
+            <partial name="_AccountStatusBadge" model="Model.Status" />
+        </div>
+
+        <div class="mt-3">
+            <div class="text-muted small">Balance</div>
+            <div class="display-6">@Model.Balance.ToString("N2") <span class="fs-5">@Model.Currency</span></div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex gap-2">
+    @if (Model.CanFreeze)
+    {
+        <form asp-action="Freeze" asp-route-id="@Model.Id" method="post">
+            <button type="submit" class="btn btn-outline-primary">Freeze account</button>
+        </form>
+    }
+    @if (Model.CanUnfreeze)
+    {
+        <form asp-action="Unfreeze" asp-route-id="@Model.Id" method="post">
+            <button type="submit" class="btn btn-outline-primary">Unfreeze account</button>
+        </form>
+    }
+    @if (Model.CanClose)
+    {
+        <form asp-action="Close" asp-route-id="@Model.Id" method="post"
+              onsubmit="return confirm('Close this account? This cannot be undone.');">
+            <button type="submit" class="btn btn-outline-danger">Close account</button>
+        </form>
+    }
+</div>

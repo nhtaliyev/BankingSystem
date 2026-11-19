@@ -1,6 +1,8 @@
+using BankingSystem.MVC.Extensions;
 using BankingSystem.MVC.Filters;
 using BankingSystem.MVC.Options;
-using BankingSystem.MVC.Services.ApiClients;
+using BankingSystem.MVC.Services.ApiClients.Implementations;
+using BankingSystem.MVC.Services.ApiClients.Interfaces;
 using BankingSystem.MVC.Services.Http;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Localization;
@@ -34,10 +36,11 @@ namespace BankingSystem.MVC
             builder.Services.AddHttpContextAccessor();
             builder.Services.AddTransient<TokenHandler>();
 
-            builder.Services.AddHttpClient(TokenHandler.RawClientName, ConfigureApiClient);
+            builder.Services.AddHttpClient(TokenHandler.RawClientName, ApiClientRegistration.ConfigureClient);
 
-            builder.Services.AddHttpClient<IAuthApi, AuthApi>(ConfigureApiClient)
-                .AddHttpMessageHandler<TokenHandler>();
+            builder.Services.AddApiClient<IAuthApi, AuthApi>();
+            builder.Services.AddApiClient<IAccountsApi, AccountsApi>();
+            builder.Services.AddApiClient<ICardsApi, CardsApi>();
 
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
@@ -83,13 +86,6 @@ namespace BankingSystem.MVC
                 .WithStaticAssets();
 
             app.Run();
-
-            static void ConfigureApiClient(IServiceProvider services, HttpClient client)
-            {
-                var options = services.GetRequiredService<IOptions<ApiOptions>>().Value;
-                client.BaseAddress = new Uri(options.BaseUrl.TrimEnd('/') + "/");
-                client.Timeout = TimeSpan.FromSeconds(30);
-            }
         }
     }
 }
